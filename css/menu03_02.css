@@ -1,0 +1,46 @@
+#menu03_02_wrap {
+    width: 100%;
+}
+/* 여기부터 콘텐츠 넓이 지정해줬음 */
+#menu03_02_wrap > .recruit_content {
+    width: 1005px;
+    margin: 0 auto;
+}
+#menu03_02_wrap > .recruit_content > ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#menu03_02_wrap > .recruit_content > ul > li {
+    width: 460px;
+    height: 260px;
+    margin-bottom: 30px;
+    border: 1px solid #C3C3C3;
+    border-radius: 15px;
+}
+#menu03_02_wrap > .recruit_content > ul > li > .item {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #404497;
+    font-size: 13px
+}
+#menu03_02_wrap > .recruit_content > ul > li > .item > h2 {
+    margin: 20px 0;
+}
+#menu03_02_wrap > .recruit_content > ul > li > .txt_item {
+    list-style: disc;
+    list-style-position: inside;
+    color: #666666;
+}
+#menu03_02_wrap > .recruit_content > ul > li > .txt_item > li::marker {
+    font-size: 1px;
+
+}
+#menu03_02_wrap > .recruit_content > ul > li > .txt_item > li {
+    margin-left: 20px;
+    line-height: 30px;
+}

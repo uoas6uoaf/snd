@@ -1,0 +1,68 @@
+#menu03_04_wrap > .content {
+    width: 1005px;
+    margin: 0 auto;
+}
+#menu03_04_wrap > .content .private {
+    height: 250px;
+    overflow-y: scroll;
+}
+#menu03_04_wrap > .content .check_txt {
+    margin-top: 20px;
+}
+#menu03_04_wrap > .content > form {
+    margin-top: 40px;
+}
+#menu03_04_wrap > .content .data1 {
+    border-top: 1px solid #c3c3c3;
+
+}
+#menu03_04_wrap > .content .data1 div {
+    height: 45px;
+    border-bottom: 1px solid #c3c3c3;
+    display: flex;
+    align-items: center;
+}
+#menu03_04_wrap > .content .data1 label {
+    width: 140px;
+    height: 100%;
+    margin: 0;
+    text-indent: 25px;
+    line-height: 45px;
+    background-color: #f9f9f9;
+}
+#menu03_04_wrap > .content .data1 input {
+    height: 25px;
+    margin-left: 30px;
+    border:1px solid #d9d9d9;
+}
+#menu03_04_wrap > .content .data1 > .col1 > .label2 {
+    margin-left: 100px;
+}
+#menu03_04_wrap > .content .data1 > .col1 > input {
+    width: 200px;
+}
+#menu03_04_wrap > .content .data1 > .col2 > input ,
+#menu03_04_wrap > .content .data1 > .col3 > input {
+    width: 780px;
+}
+#menu03_04_wrap > .content .buttons {
+    margin-top: 35px;
+    text-align: center;
+}
+#menu03_04_wrap > .content .buttons > button {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+#menu03_04_wrap > .content .buttons > button:first-child {
+    border:1px solid #d9d9d9;
+    color: #666666;
+    background:none;
+}
+#menu03_04_wrap > .content .buttons > button:last-child {
+    border: none;
+    color: #ffffff;
+    background-color: #404497;
+
+}

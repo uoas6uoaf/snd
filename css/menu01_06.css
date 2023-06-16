@@ -1,0 +1,41 @@
+
+#menu01_06_wrap > .content {
+    width: 60%;
+    margin: 0 auto;
+}
+#menu01_06_wrap > .content  > .item {
+    width: 100%;
+    margin-top: 60px;
+}
+#menu01_06_wrap > .content  > .item > .all_group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#menu01_06_wrap > .content  > .item > .all_group > li {
+    /* border: 1px solid red; */
+    /* border 나중에 지우고 조절할것 */
+    width: 49%; 
+}
+#menu01_06_wrap > .content  > .item > .all_group > li > ul {
+    padding: 0 30px;
+}
+#menu01_06_wrap > .content  > .item > .all_group > li > ul > li {
+    padding-bottom: 15px;
+}
+#menu01_06_wrap > .content  > .item > .all_group > li > ul h2::after {
+    content: "";
+    display: block;
+    width:  30px;
+    margin-top: 10px;
+    border-top: #000000 2px solid;
+}
+#menu01_06_wrap > .content  > .item > .all_group > li > ul p {
+    font-size: 14px;
+    color: #666666;
+    padding-bottom:40px ;
+}
+#menu01_06_wrap > .content  > .item > .all_group > li > ul img {
+    width: 100%;
+}

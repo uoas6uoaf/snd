@@ -1,0 +1,267 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+    margin: 0;
+    width: 100%;
+}
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    width: 100%;
+    transition: all 0.5s; 
+    position: fixed;
+    z-index: 1;
+}
+.header .nav {
+    width: 100%;
+    height: 95px;
+    top: 0;
+    left: 0;
+}
+.header .nav-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header .nav-menu {
+    width:40vw;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.header .nav-menu li{
+    position: relative;
+    cursor: pointer; 
+    width: 120px;
+    text-align: center;
+}
+.header .nav-menu > li > a {
+    color: #ffffff;
+}
+.header .nav-menu-sub {
+    position: absolute;
+    top: 40px;
+}
+.header .nav-menu-sub >li {
+    float: none;
+    text-align: center;
+    margin-top:10px;
+    display: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.header .logo {
+    width: 160px;
+}
+.header .searchBtn {
+    color: #ffffff;
+}
+
+
+/* footer css */
+.footer {
+    width: 100vw;
+    /* 이건 이따 지울것 */
+    height: 60vh;
+}
+.footer a {
+    color: #ffffff;
+}
+.footer-menu {
+    background-color: #000000;
+    height: 60%;
+}
+.footer-menu > ul {
+    width:  60%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.footer-menu > ul > li > ul {
+    margin-top: 20px;
+}
+.footer-menu > ul > li > ul::before {
+    content: "";
+    display: block;
+    width:  20%;
+    border-top: #ffffff 3px solid;
+}
+.footer-menu > ul > li > ul > li {
+    padding-top: 7px;
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+.footer-menu > ul > li > ul > li:first-child {
+    padding-top: 20px;
+}
+
+.footer > .copyright {
+    height: 40%;
+    background-color: #404497;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+.footer > .copyright > .inner {
+    width: 50%;
+    height:100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer > .copyright > .inner > ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(217, 217, 217, 0.5);;
+}
+.footer > .copyright > .inner > ul a {
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer > .copyright > .inner > ul > li:first-child a {
+    color: #ffffff;
+}
+.footer > .copyright > .inner > ul  button {
+    margin-left: 100px;
+    padding: 10px 15px;
+    background: none;
+    color: #ffffff;
+    border: 0.2px solid rgba(217, 217, 217, 0.5);
+}
+.footer > .copyright > .inner > div {
+    padding-top: 20px;
+}
+.footer > .copyright > .inner > div > p {
+    text-align: center;
+}
+
+/* subheader */
+.submenu_bar{
+    display: none;
+}
+.active_bar {
+    display: block;
+}
+
+.visual {
+    position: relative;
+    height: 500px;
+    background-image: url('../img/menu1-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.visual > .visual_item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    color: #ffffff;
+}
+.visual > .visual_item > h1 {
+    margin: 0;
+    font-size: 50px;
+}
+.visual > .visual_item > p {
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 17.5px;
+}
+.submenu_bar {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+}
+.fix_bar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.submenu_bar > ul{ 
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+}
+.submenu_bar > ul > li {
+    margin: 0 50px;
+}
+.submenu_bar > ul  a {
+    position: relative;
+    color: #000000;
+}
+.submenu_bar > ul >li > .on,
+.submenu_bar > ul >li > .nowpage{
+    color: #404497;
+    font-weight: 600;
+}
+.submenu_bar > ul >li > .on::before,
+.submenu_bar > ul >li > .nowpage::before{
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    width: 6px;
+    height: 6px;
+    background-color: #404497;
+    border-radius: 50%;
+    content: "";
+}
+
+
+/* 본문 공통 css */
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 10vh;
+    margin-bottom: 2vh;
+}
+.title_sub {
+    text-align: center;
+    color: #666666;
+    font-weight: 200;
+    padding-bottom: 5vh;
+    margin: 0;
+}
+.sc_top {
+    width: 50px;
+    height: 50px;
+    border: 1px #666666 solid;
+    border-radius: 30px;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 1;
+    right: 10%;
+    bottom: 7%;
+}
+.sc_top > i {
+    color: #666666;
+}
