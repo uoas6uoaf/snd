@@ -142,13 +142,51 @@
             </p>
             <div class="org_chart">
                 <div class="chart">
-                    <div class="chart1_wrap chart_wrap">
-                        <div class="ceo"><h3>CEO</h3></div>
-                        <ul>
-                            <li>기업부설 연구소</li>
-                            <li>경영관리팀</li>
-                        </ul>
-                    </div>
+                    <ul class="depth1">
+                        <li>
+                            <div class="line line1 wow test"></div>
+                            <div class="line line2"></div>
+                            <div class="ct_top"><h3>CEO</h3></div>
+                            <ul>
+                                <li><p>기업부설연구소</p></li>
+                                <li><p>경영관리팀</p></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="depth2">
+                        <div class="line line3"></div>
+                        <div class="line type1 line4"></div>
+                        <div class="line type1 line5"></div>
+                        <li>
+                            <p class="ct_top2">IT사업팀</p>
+                            <ul>
+                                <li class="line6"></li>
+                                <li><p>스마트팜파트</p></li>
+                                <li class="line6"></li>
+                                <li><p>공공사업파트</p></li>
+                                <li class="line6"></li>
+                                <li><p>물류사업파트</p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="ct_top2">IT운영팀</p>
+                            <ul>
+                                <li class="line6"></li>
+                                <li><p>개발관리파트</p></li>
+                                <li class="line6"></li>
+                                <li><p>운영관리파트</p></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="ct_top2" >섬유사업팀</p>
+                            <ul>
+                                <li class="line6"></li>
+                                <li><p>사류영업파트</p></li>
+                                <li class="line6"></li>
+                                <li><p>제품개발파트</p></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
