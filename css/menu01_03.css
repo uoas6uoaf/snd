@@ -71,7 +71,7 @@
     right: 20px;
     background: url(../img/history_even1.png)  0 0 no-repeat;
 }
-@keyframes fadeInUp {
+/* @keyframes fadeInUp {
     from {
       opacity: 0;
       transform: translate3d(0, 100%, 0);
@@ -81,4 +81,4 @@
       opacity: 1;
       transform: none;
     }
-}
+} */

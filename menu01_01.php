@@ -146,20 +146,24 @@
                 <div class="chart">
                     <ul class="depth1">
                         <li>
-                            <div class="line line1 wow test"></div>
-                            <div class="line line2"></div>
+                            <div class="line line1-1 type1 "></div>
+                            <div class="line line1-2 type1"></div>
+                            <div class="line line1-3 type1"></div>
+                            <div class="line line2-1 type2"></div>
+                            <div class="line line2-2 type2"></div>
                             <div class="ct_top"><h3>CEO</h3></div>
-                            <ul>
+                            <ul >
                                 <li><p>기업부설연구소</p></li>
                                 <li><p>경영관리팀</p></li>
                             </ul>
                         </li>
                     </ul>
                     <ul class="depth2">
-                        <div class="line line3"></div>
-                        <div class="line type1 line4"></div>
-                        <div class="line type1 line5"></div>
-                        <li>
+                        <div class="line line3-1 type3"></div>
+                        <div class="line line3-2 type3"></div>
+                        <div class="line type4 line4"></div>
+                        <div class="line type4 line5"></div>
+                        <li class="part">
                             <p class="ct_top2">IT사업팀</p>
                             <ul>
                                 <li class="line6"></li>
