@@ -62,28 +62,35 @@
       </div>
     </div>
     <div id="buz">
-      <div class="buz_cont chd">
-        <div class="buz_info chd">설명</div>
-        <div class="buz_slide chd">
-          <div class="sl_container">
-            <div class="buz_slide_inner chd">
-              <div class="slide active">
-                <img src="https://picsum.photos/id/1067/600/400" alt="">
-              </div>
-              <div class="slide">
-                <img src="https://picsum.photos/id/10/600/400" alt="">
-              </div>
-              <div class="slide">
-                <img src="https://picsum.photos/id/17/600/400" alt="">
+      <div class="buz_cont">
+        <div class="content content1">
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+        </div>
+        <div class="content content2">
+          <div class="slide_wrap">
+            <div class="slide_inner">
+              <div class="slides">
+                <div class="slide active slide1">
+                  <img src="https://picsum.photos/id/1067/600/400" alt="">
+                </div>
+                <div class="slide slide2">
+                  <img src="https://picsum.photos/id/10/600/400" alt="">
+                </div>
+                <div class="slide slide3">
+                  <img src="https://picsum.photos/id/17/600/400" alt="">
+                </div>
               </div>
             </div>
-            <button class="slide_btn" id="slide1">1</button>
-            <button class="slide_btn" id="slide2">2</button>
-            <button class="slide_btn" id="slide3">3</button>
           </div>
         </div>
       </div>
     </div>
+
+
+
+
     <div id="buz_news">
       <div class="title"></div>
       <div class="content">
