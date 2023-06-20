@@ -600,11 +600,3 @@
         width:253px;
     }
 }
-@keyframes opc {
-    0% {
-       opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}

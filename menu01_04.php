@@ -9,7 +9,7 @@
     <?php include "header.php"; ?>
     <?php include "subheader.php"; ?>
     <link rel="stylesheet" href="./css/menu01_04.css">
-    <script src="./js/menu.js"></script>
+    <script src="./js/menu1-4.js"></script>
 </head>
 
 <body>
@@ -27,36 +27,39 @@
                 <div class="circle_group">
                     <ul>
                         <li class="circle1">
-                            <div >
+                            <div>
                                 <h4>IT중심경영</h4>
-                                <div style="left:0px"></div>
-                                <div class="circle circle_bottom circle_g"><div class="circle_inner circle_bottom_inner"></div></div>
-                                <div class="circle circle_top circle_b"><div class="circle_inner circle_top_inner "></div></div>
-                                <div class="circle circle_top  circle_back circle_top_back circle_back_b"><div class="circle_inner circle_top_inner"></div></div>
-                                <div class="circle circle_bottom circle_back circle_bottom_back circle_back_g"><div class="circle_inner circle_bottom_inner"></div></div>
+                                <div class="circle top top1"><div class="inner "></div></div>
+                                <div class="circle top top2 rotate rotate_top"><div class="inner"></div></div>
+                                <div class="circle bottom bottom1"><div class="inner"></div></div>
+                                <div class="circle bottom bottom2 rotate rotate_bottom"><div class="inner"></div></div>
                             </div>        
                         </li>
                         <li class="circle2">
                             <div>
                                 <h4>고객감동시스템</h4>
-                                <div class="circle circle_top circle_g"><div class="circle_inner circle_top_inner "></div></div>
-                                <div class="circle circle_bottom circle_g"><div class="circle_inner circle_bottom_inner"></div></div> 
-                                <div class="circle circle_bottom circle_back circle_bottom_back circle_back_g"><div class="circle_inner circle_bottom_inner"></div></div>
-                          
+                                <div class="circle top top1"><div class="inner "></div></div>
+                                <div class="circle top top2 rotate rotate_top"><div class="inner"></div></div>
+                                <div class="circle bottom bottom1"><div class="inner"></div></div>
+                                <div class="circle bottom bottom2 rotate rotate_bottom"><div class="inner"></div></div>
                             </div>        
                         </li>
                         <li class="circle3">
                             <div>
                                 <h4>인재본위경영</h4>
-                                <div class="circle circle_top circle_b"><div class="circle_inner circle_top_inner "></div></div>
-                                 
+                                <div class="circle top top1"><div class="inner "></div></div>
+                                <div class="circle top top2 rotate rotate_top"><div class="inner"></div></div>
+                                <div class="circle bottom bottom1"><div class="inner"></div></div>
+                                <div class="circle bottom bottom2 rotate rotate_bottom"><div class="inner"></div></div>
                             </div>        
                         </li>
                     </ul>
 
-                    <ul>
-                    </ul>
                 </div>
+                <ul class="line_group">
+                    <li><div class="line"></div></li>
+                    <li><h4>IT산업의 <span>Leader</span>,그것은 <span>우리의 미래</span>입니다.</h4></li>
+                </ul>
             </div>
         </div>
     </div>

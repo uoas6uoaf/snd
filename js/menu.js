@@ -8,6 +8,10 @@ $(function() {
     var div4 = $('#menu01_01_wrap .info_list');
     var div5= $('#menu01_01_wrap .org');
 
+    // menu1-4
+    var div6 = $('#visual_item p');
+
+
     var div4Visible = false; 
 
     var div1Top = div1.offset().top -70; //이벤트 시작점
