@@ -64,24 +64,71 @@
     <div id="buz">
       <div class="buz_cont">
         <div class="content content1">
-            <button type="button">1</button>
-            <button type="button">2</button>
-            <button type="button">3</button>
+            <div>
+              <h3>사업분야</h3>
+              <p>
+              제안사는 계열사의 물류, 섬유, 선박 사업의 성장동력인 시스템 개발·유지보수, 신규 시스템 개발·정보시스템 통합 사업을 활발히 진행하고 있으며, 고객사 특성에 맞는 최적화된 정보서비스 플랫폼 시스템 컨설팅 및 시스템 통합 구축에 특화된 SI전문 회사입니다.
+              </p>
+            </div>
+            <div class="btn_group">
+              <button type="button" id="slide_btn1" class="slide_btn active" onclick="slide_move(this)">시스템통합(SI)</button>
+              <button type="button" id="slide_btn2" class="slide_btn" onclick="slide_move(this)">시스템운영(SM)</button>
+              <button type="button" id="slide_btn3" class="slide_btn" onclick="slide_move(this)">스마트팜ICT</button>
+              <button type="button" id="slide_btn4" class="slide_btn" onclick="slide_move(this)">TOS(Terminal Operating System)</button>
+              <button type="button" id="slide_btn5" class="slide_btn" onclick="slide_move(this)">섬유유통사업</button>
+            </div>
+
         </div>
         <div class="content content2">
           <div class="slide_wrap">
-            <div class="slide_inner">
-              <div class="slides">
-                <div class="slide active slide1">
-                  <img src="https://picsum.photos/id/1067/600/400" alt="">
-                </div>
-                <div class="slide slide2">
-                  <img src="https://picsum.photos/id/10/600/400" alt="">
-                </div>
-                <div class="slide slide3">
-                  <img src="https://picsum.photos/id/17/600/400" alt="">
-                </div>
-              </div>
+            <div class="slide_inner" id="slide_inner">
+              <ul class="slide_list" id="slide_list">
+                <li id="slide1">
+                  <div class="item">
+                      <div><img src="./img/main5.png"></div>
+                      <div class="dept">
+                        <h3>SI사업</h3>
+                        <p>그룹 사업영역의 생산성 향상, 안전·환경 개선, 그린에너지 선도를 목표로 하는 ‘Green Intelligence’ 를 지향하며, 미래 혁신의 Enabler 조직으로, 지속 가능한 미래를 펼쳐내기 위해 미래 기술 준비를 선도합니다.</p>
+                      </div>
+                  </div>
+                </li>
+                <li id="slide2">
+                  <div class="item">
+                  <div><img src="https://picsum.photos/id/167/600/400"></div>
+                      <div class="dept">
+                        <h3>SM사업</h3>
+                        <p>그룹 사업영역의 생산성 향상, 안전·환경 개선, 그린에너지 선도를 목표로 하는 ‘Green Intelligence’ 를 지향하며, 미래 혁신의 Enabler 조직으로, 지속 가능한 미래를 펼쳐내기 위해 미래 기술 준비를 선도합니다.</p>
+                      </div>
+                  </div>
+                </li>
+                <li id="slide3">
+                  <div class="item">
+                    <div><img src="https://picsum.photos/id/10/600/400"></div>
+                      <div class="dept">
+                        <h3>스마트팜ICT</h3>
+                        <p>그룹 사업영역의 생산성 향상, 안전·환경 개선, 그린에너지 선도를 목표로 하는 ‘Green Intelligence’ 를 지향하며, 미래 혁신의 Enabler 조직으로, 지속 가능한 미래를 펼쳐내기 위해 미래 기술 준비를 선도합니다.</p>
+                      </div>
+                  </div>
+                </li>
+                <li id="slide4">
+                  <div class="item">
+                    <div><img src="https://picsum.photos/id/17/600/400"></div>
+                      <div class="dept">
+                        <h3>TOS</h3>
+                        <p>그룹 사업영역의 생산성 향상, 안전·환경 개선, 그린에너지 선도를 목표로 하는 ‘Green Intelligence’ 를 지향하며, 미래 혁신의 Enabler 조직으로, 지속 가능한 미래를 펼쳐내기 위해 미래 기술 준비를 선도합니다.</p>
+                      </div>
+                  </div>
+                </li>
+                <li id="slide5">
+                  <div class="item">
+                    <div><img src="https://picsum.photos/id/77/600/400"></div>
+                      <div class="dept">
+                        <h3>섬유</h3>
+                        <p>그룹 사업영역의 생산성 향상, 안전·환경 개선, 그린에너지 선도를 목표로 하는 ‘Green Intelligence’ 를 지향하며, 미래 혁신의 Enabler 조직으로, 지속 가능한 미래를 펼쳐내기 위해 미래 기술 준비를 선도합니다.</p>
+                      </div>
+                  </div>
+                </li>
+              </ul >
             </div>
           </div>
         </div>
