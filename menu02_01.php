@@ -20,40 +20,20 @@
                 구축, 운영하기 위하여 컨설팅에서부터 시스템 설계, 개발, 통합, 구축, 관리, 교육, 운영/유지보수 등의<br>
                 서비스를 제공하는 포괄적 사업을 진행하고 있습니다.</p>
         </div>
-        <div class="circle_item">
-            <div class="line"></div>
-            <ul>
-                <li>
-                    <div class="circle_txt">전문<br>IT서비스 기업</div>
-                    <div class="circle"></div>
-                </li>
-                <li>
-                    <div class="circle_txt">정보화 사업의<br>성공적인 수행</div>
-                    <div class="circle"></div>
-                </li>
-                <li>
-                    <div class="circle_txt">AA/DBA/TA/SA 등<br>요소기술<br>전문가 보유</div>
-                    <div class="circle"></div>
-                </li>
-            </ul>
+        <div class="img_wrap">
+            <img class="wow scale_img" src="./img/menu2-11.png" >
+            <div class="bg"></div>
         </div>
-        <div class="buz_content">
-            <ul>
-                <li>
-                    <h2>IT 컨설팅</h2>
-                    <p>정보화 전략 계획(ISP), 엔터프라이즈 아키텍쳐(EA),<br>비즈니스 프로세스 혁신(BPR) 등 컨설팅 제공</p>
-                </li>
-                <li>
-                    <h2>시스템 구축</h2>
-                    <p>고객의 비즈니스 환경과 요구사항에<br>적합한 애플리케이션 개발,<br>IT자원의 통합 구축 서비스로 최적의 정보시스템을 구축</p>
-                </li>
-                <li>
-                    <h2>IT 인프라 구축</h2>
-                    <p>H/W, N/W는 물론 기반 S/W까지 인프라를 분석,<br>진단, 기획, 설계하여 최적의 인프라 구축 서비스 제공</p>
-                </li>
-            </ul>
+
+
+        <div class="content1">
+            
         </div>
-        <div class="perform">
+
+
+
+
+        <div class="content2">
             <div class="inner">
                 <h2>주요 사업 실적</h2>
                 <div class="group">
@@ -124,6 +104,8 @@
 
         </div>
     </div>
+    <?php include 'footer.php'; ?>
+
 </body>
 
 </html>

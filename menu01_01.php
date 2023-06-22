@@ -10,6 +10,7 @@
     <?php include "subheader.php"; ?>
     <link rel="stylesheet" href="./css/menu01_01.css">
     <script src="./js/menu.js"></script>
+    
 
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=90bacd73d46cbfb9acfbf792963f1600"></script>
 </head>
@@ -239,6 +240,7 @@
             </div>
         </div>
     </div>
+    <?php include 'footer.php'; ?>
     
     <script>
         var mapContainer = document.getElementById('map'), // 지도를 표시할 div 

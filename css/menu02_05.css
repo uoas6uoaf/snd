@@ -3,22 +3,6 @@
 #menu02_05_wrap {
     width: 100%;
 }
-#menu02_05_wrap > .title_wrap {
-    width: 60%;
-    margin: 0 auto;
-}
-#menu02_05_wrap .title {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-top: 10vh;
-}
-#menu02_05_wrap .title_sub {
-    text-align: center;
-    color: #666666;
-    font-weight: 200;
-    margin-bottom: 100px;
-    margin-top: 2vh;
-}
 #menu02_05_wrap > .buz_content {
     width: 65%;
     height: 500px;

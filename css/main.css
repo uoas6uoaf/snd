@@ -49,15 +49,15 @@ body {
     padding: 80px 0;
 }
 #buz .buz_cont {
-    width: 1350px;
+    /* width: 1350px; */
     height: 640px;
-    margin-left: 340px;
+    margin-left: 25vw;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 #buz .content {
     height: 640px;
-    position: absolute;
-    top: 0;
 }
 #buz .content1 {
     width: 405px;
@@ -168,15 +168,16 @@ body {
 
 
 #buz_news {
-    height:70vh;
+    height:75vh;
     position: relative;
 }
-#buz_news > .title {
-    height: 40%;
+#buz_news  .title {
+    height: 50%;
     background-color: #404497;
 }
 #buz_news > .content {
     width: 70vw;
+    height: 80%;
     position: absolute;
     top: 15%;
     left: 50%;
@@ -186,19 +187,37 @@ body {
     align-items: center;
     overflow: hidden;
 }
-#buz_news > .content button {
-    margin-top: 30px;
-    width: 20vw;
-    height: 50px;
+#buz_news > .content > .btn_group {
+    height: 20%;
+    width: 20%;
+    position: relative;
+}
+#buz_news > .content > .btn_group > button {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 60%;
+    border: 1px solid #666666;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background-color: #ffffff;
+    color: #666666;
+}
+#buz_news .news_item {
+    height: 85%;
 }
 #buz_news .news_item > h1 {
+    height: 20%;
+    margin: 0;
     color: #ffffff;
-    margin-bottom: 20px;
-    font-size: 3rem;
-    font-weight: 800;
+    font-weight: 600;
 }
 #buz_news .news_item > ul {
     width: 100%;
+    height: 80%;
     display: flex;
     justify-content: space-between;
 }
@@ -207,9 +226,20 @@ body {
 }
 #buz_news > .content img {
     width: 100%;
+    height: 72%;
+    border-radius: 15px 15px 0 0;
 }
-
-
+#buz_news .news_item .news_title {
+    height: 19%;
+    margin: 0;
+    padding: 4% 0 4% 0;
+    font-weight: 500;
+}
+#buz_news .news_item .news_dt{
+    height: 9%;
+    margin: 0;
+    color: #212121;
+}
 
 #com_intro {
     height: 30vh;
@@ -236,7 +266,7 @@ body {
 
 
 #recruit{
-    height: 60vh;
+    height: 43vh;
 }
 #recruit > ul {
     width: 60vw;
@@ -256,8 +286,10 @@ body {
     padding-bottom: 20px;
 }
 #recruit button {
-    background: none;
+    background-color: #ffffff;
     width: 10vw;
+    color: #666666;
+    border: solid 1px #666666;
     padding: 10px 20px;
     border-radius: 30px;
     display:flex;

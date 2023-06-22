@@ -78,9 +78,8 @@ a {
 
 /* footer css */
 .footer {
-    width: 100vw;
-    /* 이건 이따 지울것 */
     height: 60vh;
+    margin-top: 12.5vh;
 }
 .footer a {
     color: #ffffff;

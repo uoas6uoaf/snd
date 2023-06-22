@@ -14,6 +14,8 @@
 
 <body>
     <div id="menu01_05_wrap" class="page"></div>
+    <?php include 'footer.php'; ?>
+
 </body>
 
 </html>

@@ -35,7 +35,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./img/main2.png" class="d-block w-100" alt="...">
+            <img src="./img/main2.png" class="d-block w-100">
             <div class="carousel-caption d-none d-md-block">
               <h5>No.1 solution Partner<br>Leading Innovation</h5>
               <p>동방은 지속적인 성장과 차별화된 고객가치를 실현하고 있습니다.
@@ -44,7 +44,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./img/main3.png" class="d-block w-100" alt="...">
+            <img src="./img/main3.png" class="d-block w-100">
             <div class="carousel-caption d-none d-md-block">
               <h5>No.1 solution Partner<br>Leading Innovation</h5>
               <p>동방은 지속적인 성장과 차별화된 고객가치를 실현하고 있습니다.
@@ -85,7 +85,7 @@
               <ul class="slide_list" id="slide_list">
                 <li id="slide1">
                   <div class="item">
-                      <div><img src="./img/main5.png"></div>
+                      <div><img src="./img/main5.jpg"></div>
                       <div class="dept">
                         <h3>SI사업</h3>
                         <p>그룹 사업영역의 생산성 향상, 안전·환경 개선, 그린에너지 선도를 목표로 하는 ‘Green Intelligence’ 를 지향하며, 미래 혁신의 Enabler 조직으로, 지속 가능한 미래를 펼쳐내기 위해 미래 기술 준비를 선도합니다.</p>
@@ -94,7 +94,7 @@
                 </li>
                 <li id="slide2">
                   <div class="item">
-                  <div><img src="https://picsum.photos/id/167/600/400"></div>
+                  <div><img src="./img/main6.jpg"></div>
                       <div class="dept">
                         <h3>SM사업</h3>
                         <p>그룹 사업영역의 생산성 향상, 안전·환경 개선, 그린에너지 선도를 목표로 하는 ‘Green Intelligence’ 를 지향하며, 미래 혁신의 Enabler 조직으로, 지속 가능한 미래를 펼쳐내기 위해 미래 기술 준비를 선도합니다.</p>
@@ -103,7 +103,7 @@
                 </li>
                 <li id="slide3">
                   <div class="item">
-                    <div><img src="https://picsum.photos/id/10/600/400"></div>
+                    <div><img src="./img/main7.jpg"></div>
                       <div class="dept">
                         <h3>스마트팜ICT</h3>
                         <p>그룹 사업영역의 생산성 향상, 안전·환경 개선, 그린에너지 선도를 목표로 하는 ‘Green Intelligence’ 를 지향하며, 미래 혁신의 Enabler 조직으로, 지속 가능한 미래를 펼쳐내기 위해 미래 기술 준비를 선도합니다.</p>
@@ -112,7 +112,7 @@
                 </li>
                 <li id="slide4">
                   <div class="item">
-                    <div><img src="https://picsum.photos/id/17/600/400"></div>
+                    <div><img src="./img/main8.jpg"></div>
                       <div class="dept">
                         <h3>TOS</h3>
                         <p>그룹 사업영역의 생산성 향상, 안전·환경 개선, 그린에너지 선도를 목표로 하는 ‘Green Intelligence’ 를 지향하며, 미래 혁신의 Enabler 조직으로, 지속 가능한 미래를 펼쳐내기 위해 미래 기술 준비를 선도합니다.</p>
@@ -121,7 +121,7 @@
                 </li>
                 <li id="slide5">
                   <div class="item">
-                    <div><img src="https://picsum.photos/id/77/600/400"></div>
+                    <div><img src="./img/main9.jpg"></div>
                       <div class="dept">
                         <h3>섬유</h3>
                         <p>그룹 사업영역의 생산성 향상, 안전·환경 개선, 그린에너지 선도를 목표로 하는 ‘Green Intelligence’ 를 지향하며, 미래 혁신의 Enabler 조직으로, 지속 가능한 미래를 펼쳐내기 위해 미래 기술 준비를 선도합니다.</p>
@@ -145,23 +145,26 @@
           <h1>Business News</h1>
           <ul>
             <li>
-              <img src="https://picsum.photos/id/1067/600/400" alt="#" class="news_img">
-              <h6 class="news_title">뉴스제목</h6>
+              <img src="./img/main10.png"  class="news_img">
+              <h6 class="news_title">Lorem ipsum dolor sit amet consectetur. Commodo lacus nibh in id nunc vulputate ut.</h6>
               <p class="news_dt">일자</p>
             </li>
             <li>
-              <img src="https://picsum.photos/id/108/600/400" alt="#" class="news_img">
-              <h6 class="news_title">뉴스제목</h6>
+              <img src="./img/main10.png"  class="news_img">
+              <h6 class="news_title">Lorem ipsum dolor sit amet consectetur. Commodo lacus nibh in id nunc vulputate ut.</h6>
               <p class="news_dt">일자</p>
             </li>
             <li>
-              <img src="https://picsum.photos/id/10/600/400" alt="#" class="news_img">
-              <h6 class="news_title">뉴스제목</h6>
+              <img src="./img/main10.png" class="news_img">
+              <h6 class="news_title">Lorem ipsum dolor sit amet consectetur. Commodo lacus nibh in id nunc vulputate ut.</h6>
               <p class="news_dt">일자</p>
             </li>
           </ul>
         </div>
-        <button type="button">버튼</button>
+        <div class="btn_group">
+            <button type="button">주요 소식 바로가기<i class="fas fa-arrow-right-long"></i></button>
+        </div>
+        
       </div>
     </div>
     <div id="com_intro">
@@ -200,9 +203,9 @@
         </li>
       </ul>
     </div>
-    <div id="footer-wrap">푸터</div>
     <button class="sc_top" onClick="javascript:window.scrollTo(0,0)"><i class="fas fa-arrow-up-long"></i></button>
   </div>
+  <?php include 'footer.php'; ?>
 </body>
 
 </html>
