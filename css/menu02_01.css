@@ -2,61 +2,174 @@
 #menu02_01_wrap {
     width: 100%;
 }
-#menu02_01_wrap > .img_wrap {
+#menu02_01_wrap > .content1 {
+    height: 109vh;
+}
+#menu02_01_wrap > .content1 .item1 {
+    height: 40%;
+    position: relative;
+}
+#menu02_01_wrap > .content1 .item1 > .bg {
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    position: absolute;
+    background-color: #FAFAFA;
+    z-index: -1;
+}
+#menu02_01_wrap > .content1 .item1 > .img_wrap {
     width: 70vw;
-    height: 420px;
+    height: 100%;
     margin: 0 auto;
     overflow: hidden;
-    
 }
-#menu02_01_wrap > .img_wrap > img {
+#menu02_01_wrap > .content1 .item1 > .img_wrap > img {
     animation: scale_img 1s 0.5s linear forwards;
 }
 
-
-
-
-
-#menu02_01_wrap > .buz_content {
-    /* border: 1px solid red; */
-    width: 70%;
-    height: 200px;
-    margin: 50px auto;
-}
-#menu02_01_wrap > .buz_content > ul {
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-#menu02_01_wrap > .buz_content > ul > li {
-    width: 32%;
-    border: #000000 solid 1px;
-    text-align: center;
-    height: 100%;
-}
-#menu02_01_wrap > .buz_content > ul > li > h2 {
-    height:60px;
-    line-height: 60px;
-    color: #404497;
-    border-bottom: 1px solid #000000;
-}
-#menu02_01_wrap > .buz_content > ul > li > p {
-    height: 140px;
-    line-height: 20px;
-    font-size: 14px;
+#menu02_01_wrap > .content1 .item2 {
+    height: 60%;
+    background-color: #FAFAFA;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #666666;
-    font-weight: 600;
 }
 
-#menu02_01_wrap > .content1 {
+
+
+#menu02_01_wrap > .content1 .item2 .diag_wrap {
     width: 70vw;
-    height: 60vh;
-    margin: 10vh auto;
-    border: 1px solid ;
+    height: 80%;
 }
+#menu02_01_wrap > .content1 .item2 .diag_wrap >ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+#menu02_01_wrap > .content1 .item2 .diag_wrap >ul > li {
+    width: 33%;
+    height: 100%;
+}
+
+/* 원형 */
+#menu02_01_wrap > .content1 .item2 .diag_wrap .circle_wrap {
+    height: 40%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menu02_01_wrap > .content1 .item2 .diag_wrap .circle_wrap > .circle {
+    /* width: 50%; */
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    border: 1px solid #D9D9D9;
+    background-color: #FAFAFA;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 10;
+}
+#menu02_01_wrap > .content1 .item2 .diag_wrap .circle_wrap > h3 {
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.7rem;
+    font-weight: 600;
+    color: #404497;
+    z-index: 11;
+}
+/* #menu02_01_wrap > .content1 .item2 .diag_wrap ul > li:last-child .circle_wrap > h3 {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+} */
+/* 사각형 */
+#menu02_01_wrap > .content1 .item2 .diag_wrap .square{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#menu02_01_wrap > .content1 .item2 .diag_wrap .square .line {
+    height: 25%;
+    width: 1px;
+    background-color: #D9D9D9;
+}
+#menu02_01_wrap > .content1 .item2 .diag_wrap .square .square_wrap {
+    border: 1px solid #D9D9D9;
+    width: 95%;
+    height: 75%;
+}
+#menu02_01_wrap > .content1 .item2 .diag_wrap .square h3,
+#menu02_01_wrap > .content1 .item2 .diag_wrap .square p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menu02_01_wrap > .content1 .item2 .diag_wrap .square h3 {
+    height: 30%;
+    margin: 0;
+    border-bottom: 1px solid #D9D9D9;
+    font-size: 1.4rem;
+    color:#404497;
+    font-weight: 600;
+}
+#menu02_01_wrap > .content1 .item2 .diag_wrap .square p {
+    margin: 0;
+    height: 70%;
+    margin: 0 5px;
+    color: #666666;
+    text-align: center;
+}
+/* line */
+#menu02_01_wrap .cir2 > .line_wrap {
+    width: 53%;
+    height: 8%;
+    position: absolute;
+    align-items: center;
+}
+#menu02_01_wrap .cir2 > .line_L_wrap {
+    left: -26%;
+    display: flex;
+}
+#menu02_01_wrap .cir2 > .line_R_wrap {
+    right: -26%;
+    display: flex;
+}
+#menu02_01_wrap .cir2 .dot {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    position: absolute;
+    left: 47%;
+}
+
+#menu02_01_wrap .cir2 .line{
+    width: 50%;
+    height: 2px;
+    background-color: #D9D9D9;
+}
+
+@keyframes lineRight {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 25%;
+    }
+}
+@keyframes lineLeft {
+    0% {
+        width: 0;
+    }
+    100% {
+        left: -26%;
+        width: 53%;
+    }
+}
+
+
+
+
 
 #menu02_01_wrap > .content2 {
     width: 100%;
