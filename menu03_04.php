@@ -8,7 +8,7 @@
     <title>Document</title>
     <?php include "header.php"; ?>
     <?php include "subheader.php"; ?>
-    <script src="./js/menu.js"></script>
+    <script src="./js/menu3.js"></script>
     <link rel="stylesheet" href="./css/menu03_04.css">
 
 </head>
@@ -95,15 +95,15 @@
                         </tbody>
                     </table>
                 </div>
-                <label><input type="checkbox" name="agree" value="agree">동의합니다.</label>
+                <label><input type="checkbox" class="send_chk" name="agree" value="agree" >동의합니다.</label>
             </div>
-            <form action="">
+            <form action="send_mail.php" method="post" name="mail_form" class="mail_form">
                 <div class="data1">
                     <div class="col1">
                         <label for="name">이름</label>
-                        <input type="text" id="name" class="col1" name="name">
+                        <input type="text" id="name" class="col1 input" name="name">
                         <label for="phone" class="label2">전화번호</label>
-                        <input type="text" id="phone" class="col1" name="phone">
+                        <input type="text" id="phone" class="col1 input" name="phone">
                     </div>
                     <div class="col2">
                         <label for="email">Email</label>
@@ -114,10 +114,10 @@
                         <input type="text" id="subject" class="col3" name="subject">
                     </div>
                 </div>
-                <div id="summernote"></div>
+                <textarea id="summernote" name="content"></textarea>
                 <div class="buttons">
                     <button type="button">취소</button>
-                    <button type="submit">작성완료</button>
+                    <button type="button" onclick="check_input()">작성완료</button>
                 </div>
             </form>
         </div>
@@ -125,13 +125,13 @@
     </div>
 </body>
 <script>
-        $(document).ready(function () {
-            $('#summernote').summernote({
-                height: 600,                 // 에디터 높이
-                lang: "ko-KR",					// 한글 설정
-                placeholder: '최대 2048자까지 쓸 수 있습니다'	//placeholder 설정
-            });
-
+    $(document).ready(function () {
+        $('#summernote').summernote({
+            height: 600,                 // 에디터 높이
+            lang: "ko-KR",					// 한글 설정
+            placeholder: '최대 2048자까지 쓸 수 있습니다'	//placeholder 설정
         });
+        
+    });
     </script>
 </html>
