@@ -55,8 +55,10 @@
                                     <div class="line line1"></div>
                                     <div class="line line2"></div>
                                 </div>
-                                <div class="circle"></div>
-                                <h3>정보화 사업의<br>성공적인 수행</h3>
+                                <div class="circle">
+                                    <h3>정보화 사업의<br>성공적인 수행</h3>
+                                </div>
+                                
                             </div>
                             <ul class="square">
                                 <li class="line"></li>
@@ -84,19 +86,23 @@
             </div>
         </div>
 
-
-
-
         <div class="content2">
             <div class="inner">
                 <h2>주요 사업 실적</h2>
                 <div class="group">
                     <ul>
-                        <li>그룹계열사</li>
+                        <li>
+                            <div class="cir_number">01</div>
+                            그룹계열사
+                        </li>
                         <li>
                             <ul>
                                 <li>㈜동방</li>
                                 <li>유엔씨티㈜</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
                                 <li>㈜동방물류센터</li>
                                 <li>㈜동방광양물류센터</li>
                             </ul>
@@ -105,42 +111,64 @@
                             <ul>
                                 <li>일조국제훼리㈜</li>
                                 <li>DONGBANG LOGISTICSVINA(베트남)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
                                 <li>대련동방물류유한공사(중국)</li>
                                 <li>인산장학문화재단</li>
                             </ul>
                         </li>
                     </ul>
                     <ul>
-                        <li>기업</li>
+                        <li>
+                            <div class="cir_number">02</div>
+                            기업
+                        </li>
                         <li>
                             <ul>
                                 <li>인천국제페리부두운영</li>
                                 <li>평택동방아이포트</li>
-                                <li>농협사료</li>
-                                <li>농협정보시스템</li>
-                                <li>농협경제지주</li>
+                                <li>한미글로벌</li>
                             </ul>
                         </li>
                         <li>
                             <ul>
-                                <li>한겨레신문사</li>
+                                <li>농협사료</li>
+                                <li>농협정보시스템</li>
+                                <li>두산중공업</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>농협경제지주</li>
+                                <li>한겨례신문사</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
                                 <li>㈜목련</li>
                                 <li>씨제이올리브네트웍스㈜</li>
-                                <li>한미글로벌</li>
-                                <li>두산중공업</li>
                             </ul>
                         </li>
                     </ul>
                     <ul>
-                        <li>공공기관</li>
+                        <li>
+                            <div class="cir_number">03</div>
+                            공공기관
+                        </li>
                         <li>
                             <ul>
                                 <li>국립축산과학원</li>
                                 <li>농업기술센터</li>
-                                <li>한국환경산업기술원</li>
                                 <li>합동참모본부</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
                                 <li>방위사업청</li>
                                 <li>육군/공군/해군</li>
+                                <li>한국환경산업기술원</li>
                             </ul>
                         </li>
                         <li>
@@ -148,6 +176,10 @@
                                 <li>국립환경과학원</li>
                                 <li>예금보험공사</li>
                                 <li>건강보험심사평가원</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
                                 <li>철도기술연구원</li>
                                 <li>청소년위원회</li>
                             </ul>

@@ -32,8 +32,8 @@
                     <div>
                         <img src="img/menu2-2.png">
                         <div>
-                            <h3>데이터 센터</h3>
-                            <p>고객에게 안정된 DBMS 서비스 구축 및 운영관리</p>
+                            <h3>보안/네트워크</h3>
+                            <p>웹 어플리케이션 취약점 점검 및 시스템/네트워크<br>취약점 진단</p>
                         </div>
                     </div>
                 </li>
@@ -41,8 +41,8 @@
                     <div>
                         <img src="img/menu2-3.png">
                         <div>
-                            <h3>데이터 센터</h3>
-                            <p>고객에게 안정된 DBMS 서비스 구축 및 운영관리</p>
+                            <h3>애플리케이션</h3>
+                            <p>고객의 필요에 따라 신규 IT시스템 개발과 운영 지원</p>
                         </div>
                     </div>
                 </li>
@@ -50,8 +50,8 @@
                     <div>
                         <img src="img/menu2-4.png">
                         <div>
-                            <h3>데이터 센터</h3>
-                            <p>고객에게 안정된 DBMS 서비스 구축 및 운영관리</p>
+                            <h3>IT인프라</h3>
+                            <p>고고객 전산 시스템 운영에 필요한 IT플랫폼 및 IT자원<br> 제공/운영</p>
                         </div>
                     </div>
                 </li>
@@ -59,8 +59,8 @@
                     <div>
                         <img src="img/menu2-5.png">
                         <div>
-                            <h3>데이터 센터</h3>
-                            <p>고객에게 안정된 DBMS 서비스 구축 및 운영관리</p>
+                            <h3>IT기획 및 컨설팅</h3>
+                            <p>고객의 IT 추진계획에 대한 의사결정 및 전략수립 지원</p>
                         </div>
                     </div>
                 </li>
@@ -68,8 +68,8 @@
                     <div>
                         <img src="img/menu2-6.png">
                         <div>
-                            <h3>데이터 센터</h3>
-                            <p>고객에게 안정된 DBMS 서비스 구축 및 운영관리</p>
+                            <h3>헬프데스크</h3>
+                            <p>고객 서비스 요구사항 접수 단일 창구화(365일 지원)</p>
                         </div>
                     </div>
                 </li>
@@ -80,55 +80,66 @@
                 <h2>주요 사업 실적</h2>
                 <div class="group">
                     <ul>
-                        <li>그룹계열사</li>
+                        <li>
+                            <div class="cir_number">01</div>
+                            그룹계열사
+                        </li>
                         <li>
                             <ul>
                                 <li>㈜동방</li>
                                 <li>유엔씨티㈜</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
                                 <li>㈜동방물류센터</li>
                                 <li>㈜동방광양물류센터</li>
                             </ul>
                         </li>
-                        <li>
-                            <ul>
-                                <li>일조국제훼리㈜</li>
-                                <li>DONGBANG LOGISTICSVINA(베트남)</li>
-                                <li>대련동방물류유한공사(중국)</li>
-                                <li>인산장학문화재단</li>
-                            </ul>
-                        </li>
                     </ul>
                     <ul>
-                        <li>기업</li>
+                        <li>
+                            <div class="cir_number">02</div>
+                            기업
+                        </li>
                         <li>
                             <ul>
                                 <li>인천국제페리부두운영</li>
                                 <li>평택동방아이포트</li>
-                                <li>농협사료</li>
-                                <li>농협정보시스템</li>
-                                <li>농협경제지주</li>
+                                <li>한미글로벌</li>
                             </ul>
                         </li>
                         <li>
                             <ul>
-                                <li>한겨레신문사</li>
-                                <li>㈜목련</li>
-                                <li>씨제이올리브네트웍스㈜</li>
-                                <li>한미글로벌</li>
+                                <li>농협사료</li>
+                                <li>농협정보시스템</li>
                                 <li>두산중공업</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>농협경제지주</li>
+                                <li>한겨레신문사</li>
                             </ul>
                         </li>
                     </ul>
                     <ul>
-                        <li>공공기관</li>
+                        <li>
+                            <div class="cir_number">03</div>
+                            공공기관
+                        </li>
                         <li>
                             <ul>
                                 <li>국립축산과학원</li>
                                 <li>농업기술센터</li>
-                                <li>한국환경산업기술원</li>
                                 <li>합동참모본부</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
                                 <li>방위사업청</li>
-                                <li>육군/공군/해군</li>
+                                <li>육군/공군/해군</li> 
+                                <li>한국환경산업기술원</li>
                             </ul>
                         </li>
                         <li>
@@ -136,8 +147,6 @@
                                 <li>국립환경과학원</li>
                                 <li>예금보험공사</li>
                                 <li>건강보험심사평가원</li>
-                                <li>철도기술연구원</li>
-                                <li>청소년위원회</li>
                             </ul>
                         </li>
                     </ul>

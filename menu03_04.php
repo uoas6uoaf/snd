@@ -95,23 +95,23 @@
                         </tbody>
                     </table>
                 </div>
-                <label><input type="checkbox" class="send_chk" name="agree" value="agree" >동의합니다.</label>
+                <label><input type="checkbox" class="send_chk" name="agree">동의합니다.</label>
             </div>
             <form action="send_mail.php" method="post" name="mail_form" class="mail_form">
                 <div class="data1">
                     <div class="col1">
                         <label for="name">이름</label>
-                        <input type="text" id="name" class="col1 input" name="name">
+                        <input type="text" id="name" class="col1 input name" name="name">
                         <label for="phone" class="label2">전화번호</label>
-                        <input type="text" id="phone" class="col1 input" name="phone">
+                        <input type="text" id="phone" class="col1 input phone" name="phone">
                     </div>
                     <div class="col2">
                         <label for="email">Email</label>
-                        <input type="text" id="email" name="email">
+                        <input type="text" id="email" name="email" class="email">
                     </div>
                     <div class="col3">
                         <label for="subject">제목</label>
-                        <input type="text" id="subject" class="col3" name="subject">
+                        <input type="text" id="subject" class="col3 subject" name="subject">
                     </div>
                 </div>
                 <textarea id="summernote" name="content"></textarea>
