@@ -10,7 +10,6 @@
     <?php include "subheader.php"; ?>
     <?php include "db_connect.php"; ?>
     <link rel="stylesheet" href="./css/menu01_05.css">
-    <script src="./js/menu01-05.js"></script>
 </head>
 
 <body>
@@ -24,6 +23,9 @@
             <button type="button">상장/인증</button>
         </div>
         <div class="list_wrap">
+            <div class="search_gruop">
+                <button type="button" onclick="location.href='menu01_insert.php'"><i class="fas fa-plus"></i></button>
+            </div>
             <table>
                 <colgroup>
                     <col width="4%"/>
@@ -43,23 +45,77 @@
                 </thead>
                 <tbody>
                 <?php 
-                    $sql = "SELECT * FROM board ORDER BY bno;";
+                    if (isset($_GET["page"]))
+                        $page = $_GET["page"];
+                    else
+                        $page = 1;
+
+                    $sql = "SELECT * FROM board ORDER BY bno DESC;";
                     $result = mysqli_query($con,$sql);
 
 	                $total_record = mysqli_num_rows($result); // 전체 글 수
+                    $scale = 15;	// 한 화면에 표시되는 글 수
 
-                    while($row = mysqli_fetch_assoc($result)){
+                    // 전체 페이지 수($total_page) 계산 
+                    if ($total_record % $scale == 0)     
+                        $total_page = floor($total_record/$scale);      
+                    else
+                        $total_page = floor($total_record/$scale) + 1; 
+
+                    // 표시할 페이지($page)에 따라 $start 계산  
+                    $start = (intval($page) - 1) * $scale;  
+
+                    $number = $total_record - $start;
+                    for ($i=$start; $i<$start+$scale && $i < $total_record; $i++) {
+                        mysqli_data_seek($result, $i); 		// 가져올 레코드로 위치(포인터) 이동      	
+                        $row = mysqli_fetch_assoc($result); // 하나의 레코드 가져오기
+
+                        $bno = $row['bno'];
+                        $title = $row['title'];
+                        $writer = $row['writer'];
+                        $reg_dt = $row['reg_dt'];
+                        $view_cnt = $row['view_cnt'];
+
+                    // while($row = mysqli_fetch_assoc($result)){
                 ?>
                     <tr align=center>
-                        <td><?= $row['bno'] ?></td>
-                        <td><a href="menu01_read.php?bno=<?= $row['bno'] ?>"><?= $row['title'] ?></a></td>
-                        <td><?= $row['writer'] ?></td>
-                        <td><?= $row['reg_dt'] ?></td>
-                        <td><?= $row['view_cnt'] ?></td>
+                        <td><?= $bno ?></td>
+                        <td><a href="menu01_read.php?bno=<?= $bno ?>"><?= $title ?></a></td>
+                        <td><?= $writer ?></td>
+                        <td><?= $reg_dt ?></td>
+                        <td><?= $view_cnt ?></td>
                     </tr>
-                <?php } ?>
+                <?php 
+                    $number--;
+                    }
+                    mysqli_close($con);
+                ?>
                 </tbody>
             </table>
+            <div class=pagenav>
+                <ul class="page_num"> 	
+                <?php
+                    if ($total_page >= 2 && $page >= 2) {
+                        $new_page = $page - 1;
+                        echo "<li><a href='menu01-05.php?page=$new_page'><i class='fas fa-angle-left'></i></a></li>";
+                    }
+
+                    // 게시판 목록 하단에 페이지 링크 번호 출력
+                    for ($i = 1; $i <= $total_page; $i++) {
+                        if ($page == $i) {
+                            echo "<li class='active'><b> $i</b></li>";
+                        } else {
+                            echo "<li><a href='menu01_05.php?page=$i'> $i</a></li>";
+                        }
+                    }
+
+                    if ($total_page >= 2 && $page != $total_page) {
+                        $new_page = $page + 1;
+                        echo "<li><a href='menu01_05.php?page=$new_page'><i class='fas fa-angle-right'></i></a></li>";
+                    }
+                ?>
+                </ul>
+            </div>
         </div>
     </div>
     

@@ -2,6 +2,10 @@
     width: 70%;
     margin: 0 auto;
 }
+#menu01_read_wrap a,
+#menu01_read_wrap a:hover{
+    color: #000000;
+}
 #menu01_read_wrap .detail {
     margin-top: 40px;
     border-top: 1px solid #212121;
@@ -38,4 +42,49 @@
 }
 #menu01_read_wrap .detail > .content_wrap > .content {
     padding: 20px;
+}
+#menu01_read_wrap > .btn_group {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#menu01_read_wrap > .btn_group > button {
+    width: 175px;
+    height: 56px;
+    background-color: #404497;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+}
+#menu01_read_wrap > .move_list {
+    border-top: 1px solid #C3C3C3;
+}
+#menu01_read_wrap > .move_list > .arrow {
+    height: 65px;
+    padding-left: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #C3C3C3;
+}
+#menu01_read_wrap > .move_list > .arrow > .col1 {
+    font-size: 20px;
+}
+#menu01_read_wrap > .move_list > .arrow i {
+    margin-left:60px;
+    margin-right:60px;
+}
+#menu01_read_wrap > .move_list > .arrow > .b_title {
+    display: flex;
+    align-items: center;
+}
+#menu01_read_wrap > .move_list > .arrow > .b_title::before {
+    content: "";
+    display: block;
+    height: 25px;
+    width: 1px;
+    margin-right: 30px;
+    background-color: #C3C3C3;
 }
