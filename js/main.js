@@ -13,6 +13,9 @@ function slide_move(num){
     var slide4 = document.getElementById('slide4');
     var slide5 = document.getElementById('slide5');
 
+    var title = document.getElementById('biz_dapt');
+    var content = document.getElementById('dept_info');
+
     var translateXValue = 0;
     var translateYValue = -87;
 
@@ -42,6 +45,8 @@ function slide_move(num){
             slide4.style.transform = `translateY(0px)`;
             slide5.style.transform = `translateY(0px)`;
 
+            title.innerHTML = "시스템통합(SI)";
+            content.innerHTML = "시스템 통합에대한 내용입니다.";
             break;
 
         case "slide_btn2":
@@ -56,6 +61,8 @@ function slide_move(num){
             slide4.style.transform = `translateY(0px)`;
             slide5.style.transform = `translateY(0px)`;
 
+            title.innerHTML = "시스템운영(SM)";
+            content.innerHTML = "시스템 운영에대한 내용입니다.";
 
             break;
 
@@ -71,6 +78,8 @@ function slide_move(num){
             slide4.style.transform = `translateY(0px)`;
             slide5.style.transform = `translateY(0px)`;
 
+            title.innerHTML = "스마트팜ICT";
+            content.innerHTML = "스마트팜ICT에대한 내용입니다.";
             break;
         case "slide_btn4":
             console.log("4클릭");
@@ -83,6 +92,9 @@ function slide_move(num){
             slide2.style.transform = `translateY(0px)`;
             slide3.style.transform = `translateY(0px)`;
             slide5.style.transform = `translateY(0px)`;
+
+            title.innerHTML = "TOS";
+            content.innerHTML = "TOS에대한 내용입니다.";
 
             break;
 
@@ -97,6 +109,10 @@ function slide_move(num){
         slide2.style.transform = `translateY(0px)`;
         slide3.style.transform = `translateY(0px)`;
         slide4.style.transform = `translateY(0px)`;
+
+        title.innerHTML = "섬유유통사업";
+        content.innerHTML = "섬유유통사업에대한 내용입니다.";
+
         break;
     }
 

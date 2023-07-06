@@ -63,7 +63,13 @@
                     </ul>
                 </li>
             </ul>
-            <div class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <?php 
+            if($userid){
+            ?>
+            <div onclick="location.href='logout.php'">logout</div>   
+            <?php
+            }
+            ?>
         </div>
     </nav>
   </header>

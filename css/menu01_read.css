@@ -26,12 +26,12 @@
 }
 #menu01_read_wrap .detail ul li:nth-child(odd) {
     margin-right: 18px;
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 17px;
 }
 #menu01_read_wrap .detail ul li:nth-child(even) {
     margin-right: 30px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -43,6 +43,12 @@
 #menu01_read_wrap .detail > .content_wrap > .content {
     padding: 20px;
 }
+#menu01_read_wrap .attach {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
 #menu01_read_wrap > .btn_group {
     height: 150px;
     display: flex;
@@ -52,10 +58,16 @@
 #menu01_read_wrap > .btn_group > button {
     width: 175px;
     height: 56px;
-    background-color: #404497;
-    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #d9d9d9;
+    color: #666666;
+    background:none;
     font-size: 22px;
     font-weight: 600;
+}
+#menu01_read_wrap > .btn_group > button:last-child{
+    background-color: #404497;
+    color: #ffffff;
 }
 #menu01_read_wrap > .move_list {
     border-top: 1px solid #C3C3C3;

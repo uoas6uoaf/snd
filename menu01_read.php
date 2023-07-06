@@ -58,15 +58,20 @@
                     
                     $result = mysqli_query($con,$sql);
                     $cnt = mysqli_num_rows($result);
-                    
+
                     if(!$cnt == 0){
                 ?>
                         <div class="attach">
-                            <ul>
-                                <li>첨부파일</li>
-                            </ul>
+                    <?php
+                        for($i=1;$row = mysqli_fetch_assoc($result);$i++){
+                    ?>     
+                        <ul>
+                            <li>첨부파일#<?= $i ?></li>
+                            <li><a href="data/<?=$row['file_nm'];?>"download><?= $row["file_nm"] ?></a></li>
+                        </ul>
+                    <?php } ?>        
+                            
                         </div>
-
                 <?php     
                     }
                 ?>
@@ -75,6 +80,14 @@
             </div>
         </div>
         <div class="btn_group">
+            <?php
+            if($userid){
+            ?>
+            <button type="button" onclick="confirm_del()">삭제</button>
+            <button type="button" onclick="location.href='menu01_modify.php?bno=<?= $bno ?>'">수정</button>
+            <?php
+            }
+            ?>
             <button type="button" onclick="location.href='menu01_05.php'">목록</button>
         </div>
         <div class="move_list">
@@ -131,6 +144,14 @@
 
 
     <?php include 'footer.php'; ?>
+    <script>
+        function confirm_del() {
+            var result = confirm("해당 게시글을 정말 삭제하시겠습니까?");
+            if (result){
+                location.href = 'delete.php?bno=<?= $now_bno ?>';
+            }
+        }
+    </script>
 </body>
 
 </html>

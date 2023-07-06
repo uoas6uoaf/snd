@@ -40,15 +40,19 @@
             $uploadFile = $uploadDir.basename($_FILES['upfile']['name'][$i]);
             $filenm = $_FILES['upfile']['name'][$i];
             $filetype = $_FILES['upfile']['type'][$i];
+
             if(move_uploaded_file($_FILES['upfile']['tmp_name'][$i], $uploadFile)){
                 $f_sql = "insert into file(bno, file_nm,file_type) values ('$last_bno','$filenm','$filetype')";
                 $f_result = mysqli_query($con,$f_sql);
-                echo "파일업로드 성공";
             }else{
-                echo "파일업로드 실패";
+                // 실패 시 예외처리하기
             }
         }
+
     }
+    echo "<script>
+        location.href = 'menu01_05.php';
+    </script>";
     
     // 파일
     // $upload_dir = './data/';

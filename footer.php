@@ -1,75 +1,5 @@
 <body>
     <footer class="footer">
-        <div class="footer-menu">
-            <ul>
-                <li>회사소개
-                    <ul>
-                        <li><a href="#">OVERVIEW</a> </li>
-                        <li><a href="#">CEO 인삿말</a> </li>
-                        <li><a href="#">회사 연혁</a> </li>
-                        <li><a href="#">기업이념</a> </li>
-                        <li><a href="#">사업실적</a> </li>
-                        <li><a href="#">그룹 및 계열사</a> </li>
-                        <li><a href="#">인증수상내역</a> </li>
-                    </ul>
-                </li>
-                <li>회사소개
-                    <ul>
-                        <li><a href="#">OVERVIEW</a> </li>
-                        <li><a href="#">CEO 인삿말</a> </li>
-                        <li><a href="#">회사 연혁</a> </li>
-                        <li><a href="#">기업이념</a> </li>
-                        <li><a href="#">사업실적</a> </li>
-                        <li><a href="#">그룹 및 계열사</a> </li>
-                        <li><a href="#">인증수상내역</a> </li>
-                    </ul>
-                </li>
-                <li>회사소개
-                    <ul>
-                        <li><a href="#">OVERVIEW</a> </li>
-                        <li><a href="#">CEO 인삿말</a> </li>
-                        <li><a href="#">회사 연혁</a> </li>
-                        <li><a href="#">기업이념</a> </li>
-                        <li><a href="#">사업실적</a> </li>
-                        <li><a href="#">그룹 및 계열사</a> </li>
-                        <li><a href="#">인증수상내역</a> </li>
-                    </ul>
-                </li>
-                <li>회사소개
-                    <ul>
-                        <li><a href="#">OVERVIEW</a> </li>
-                        <li><a href="#">CEO 인삿말</a> </li>
-                        <li><a href="#">회사 연혁</a> </li>
-                        <li><a href="#">기업이념</a> </li>
-                        <li><a href="#">사업실적</a> </li>
-                        <li><a href="#">그룹 및 계열사</a> </li>
-                        <li><a href="#">인증수상내역</a> </li>
-                    </ul>
-                </li>
-                <li>회사소개
-                    <ul>
-                        <li><a href="#">OVERVIEW</a> </li>
-                        <li><a href="#">CEO 인삿말</a> </li>
-                        <li><a href="#">회사 연혁</a> </li>
-                        <li><a href="#">기업이념</a> </li>
-                        <li><a href="#">사업실적</a> </li>
-                        <li><a href="#">그룹 및 계열사</a> </li>
-                        <li><a href="#">인증수상내역</a> </li>
-                    </ul>
-                </li>
-                <li>회사소개
-                    <ul>
-                        <li><a href="#">OVERVIEW</a> </li>
-                        <li><a href="#">CEO 인삿말</a> </li>
-                        <li><a href="#">회사 연혁</a> </li>
-                        <li><a href="#">기업이념</a> </li>
-                        <li><a href="#">사업실적</a> </li>
-                        <li><a href="#">그룹 및 계열사</a> </li>
-                        <li><a href="#">인증수상내역</a> </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
         <div class="copyright">
             <div class="inner">
                 <ul>
@@ -81,7 +11,7 @@
                     <li>ㆍ</li>
                     <li><a href="#">찾아오시는 길</a> </li>
                     <li>
-                        <button type="button">계열사 바로가기</button>
+                        <button type="button" onclick="location.href='menu01_06.php'">계열사 바로가기</button>
                     </li>
                 </ul>
                 <div>

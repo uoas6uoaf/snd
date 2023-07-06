@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>동방에스앤디</title>
   <link rel="stylesheet" href="./css/main.css">
+  <?php include "db_connect.php"; ?>
   <?php include 'header.php'; ?>
   <script src="./js/main.js"></script>
 </head>
@@ -65,8 +66,8 @@
       <div class="buz_cont">
         <div class="content content1">
             <div>
-              <h3>사업분야</h3>
-              <p>
+              <h3 id="biz_dapt">사업분야</h3>
+              <p id="dept_info">
               제안사는 계열사의 물류, 섬유, 선박 사업의 성장동력인 시스템 개발·유지보수, 신규 시스템 개발·정보시스템 통합 사업을 활발히 진행하고 있으며, 고객사 특성에 맞는 최적화된 정보서비스 플랫폼 시스템 컨설팅 및 시스템 통합 구축에 특화된 SI전문 회사입니다.
               </p>
             </div>
@@ -136,33 +137,49 @@
     </div>
 
 
+    <?php
+      $sql = "SELECT A.bno, A.title , A.reg_dt , B.file_id ,B.file_nm, B.file_type FROM board A left outer JOIN file B on A.bno = B.bno group by A.bno,A.title,A.reg_dt ORDER by A.reg_dt DESC LIMIT 3";
+      $result = mysqli_query($con,$sql);
+    ?>
 
-
+   
     <div id="buz_news">
       <div class="title"></div>
       <div class="content">
         <div class="news_item">
           <h1>Business News</h1>
           <ul>
-            <li>
-              <img src="./img/main10.png"  class="news_img">
-              <h6 class="news_title">Lorem ipsum dolor sit amet consectetur. Commodo lacus nibh in id nunc vulputate ut.</h6>
-              <p class="news_dt">일자</p>
-            </li>
-            <li>
-              <img src="./img/main10.png"  class="news_img">
-              <h6 class="news_title">Lorem ipsum dolor sit amet consectetur. Commodo lacus nibh in id nunc vulputate ut.</h6>
-              <p class="news_dt">일자</p>
-            </li>
-            <li>
-              <img src="./img/main10.png" class="news_img">
-              <h6 class="news_title">Lorem ipsum dolor sit amet consectetur. Commodo lacus nibh in id nunc vulputate ut.</h6>
-              <p class="news_dt">일자</p>
-            </li>
+          <?php
+          while($row = mysqli_fetch_array($result)){
+
+            $bno = $row["bno"];
+            $title = $row["title"];
+            $reg_dt = $row["reg_dt"];
+            
+            if($row["file_id"]!=null && strpos($row["file_type"], 'image')!== false){
+              $file_id = $row["file_id"];
+              $file_nm = $row["file_nm"];
+              $file_type = substr($row["file_type"], -3);
+              $dir = "./data/".$file_nm;
+            }else {
+              $file_id    = "";
+              $file_nm    = "";
+              $file_type  = "";
+              $dir = "./img/main_biz3.jpg";
+            }
+          ?>
+          <li>
+            <img src="<?= $dir ?>" class="news_img" onclick="location.href='menu01_read.php?bno=<?= $bno ?>'">
+            <h6 class="news_title" onclick="location.href='menu01_read.php?bno=<?= $bno ?>'"><?= $title ?></h6>
+            <p class="news_dt"><?= $reg_dt ?></p>
+          </li>
+          <?php   
+          }
+          ?>
           </ul>
         </div>
         <div class="btn_group">
-            <button type="button">주요 소식 바로가기<i class="fas fa-arrow-right-long"></i></button>
+            <button type="button" onclick="location.href='menu01_05.php'">주요 소식 바로가기<i class="fas fa-arrow-right-long"></i></button>
         </div>
         
       </div>
@@ -171,14 +188,14 @@
       <ul class="cont">
         <li>
           <ul class="cont_inner">
-            <li><h3>동방소개</h3></li>
+            <li onclick="location.href='menu01_01.php'"><h3>동방소개</h3></li>
             <li><p>변화를 선도하는 글로벌 기업<br>동방시스템을 소개합니다.</p></li>
           </ul>
           <div><i class="fas fa-arrow-right-long"></i></div>
         </li>
         <li>
           <ul class="cont_inner">
-            <li><h3>동방연혁</h3></li>
+            <li  onclick="location.href='menu01_03.php'"><h3>동방연혁</h3></li>
             <li><p>변화를 선도하는 글로벌 기업<br>동방시스템을 소개합니다.</p></li>
           </ul>
           <div><i class="fas fa-arrow-right-long"></i></div>
@@ -191,14 +208,14 @@
           <ul>
             <li><h1>동방과 함께할<br>당신을 초대합니다.</h1></li>
             <li><p>동방시스템과 함께할 당신을 초대합니다. <br>동방시스템과 함께할 당신을 초대합니다.</p></li>
-            <li><button type="button">채용안내<i class="fas fa-arrow-right-long"></i></button></li>
+            <li><button type="button" onclick="location.href='menu03_04.php'">채용문의<i class="fas fa-arrow-right-long"></i></button></li>
           </ul>
         </li>
         <li>
           <ul>
             <li><h1>동방과 함께할<br>당신을 초대합니다.</h1></li>
             <li><p>동방시스템과 함께할 당신을 초대합니다. <br>동방시스템과 함께할 당신을 초대합니다.</p></li>
-            <li><button type="button">채용안내<i class="fas fa-arrow-right-long"></i></button></li>
+            <li><button type="button" onclick="location.href='menu04_01.php'">고객센터<i class="fas fa-arrow-right-long"></i></button></li>
           </ul>
         </li>
       </ul>

@@ -25,8 +25,27 @@
 }
 #menu01_05_wrap > .list_wrap > .search_gruop {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin-bottom: 11px;
+}
+#menu01_05_wrap > .list_wrap > .search_gruop .total {
+    text-transform: uppercase
+}
+#menu01_05_wrap > .list_wrap > .search_gruop > .search_btn {
+    display: flex;
+}
+#menu01_05_wrap > .list_wrap > .search_gruop .icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #666666;
+}
+#menu01_05_wrap > .list_wrap > .search_gruop .icon i {
+    font-size: 23px;
+    color: #ffffff;
 }
 #menu01_05_wrap > .list_wrap > .search_gruop > button {
     width: 40px;

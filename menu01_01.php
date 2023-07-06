@@ -39,7 +39,7 @@
                     <li>동방에스앤디(주)</li>
                 </ul>
                 <ul class="info_list">
-                    <li>대표이사</li>6
+                    <li>대표이사</li>
                     <li>정규하</li>
                 </ul>
                 <ul class="info_list">
@@ -210,8 +210,8 @@
                     <li>010-1234-5678</li>
                 </ul>
                 <div class="mapBtn">
-                    <button type="button">출발지 입력</button>
-                    <button type="button">출발지 입력</button>
+                    <!-- <button type="button">출발지 입력</button>
+                    <button type="button">출발지 입력</button> -->
                 </div>
             </div>
             <div class="guide">
@@ -219,16 +219,16 @@
                     <li>오시는 길</li>
                     <li>
                         <ul>
-                            <li><i class="fas fa-train"></i></li>
+                            <li><img src="./img/menu1-3.png"></li>
                             <li>
-                                <p>2호선 을지로 입구역 하차</p>
-                                <p>2호선 을지로 입구역 하차</p>
+                                <p>·<strong style='color:#00A448'> 2호선</strong><strong> 을지로 입구역 </strong>하차</p>
+                                <p>·<strong style='color:#00A448'> 2호선</strong><strong> 을지로 입구역 </strong>하차</p>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <ul>
-                            <li><i class="fas fa-bus-simple"></i></li>
+                            <li><img src="./img/menu1-3.png"></li>
                             <li>
                                 <p>롯데백화점 하차 > 도보 3분 간선버스 100,104,150,151,506 / 지선버스 7017</p>
                                 <p>롯데백화점 하차 > 도보 3분 간선버스 100,104,150,151,506 / 지선버스 7017</p>

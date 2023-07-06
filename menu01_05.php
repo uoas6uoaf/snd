@@ -1,3 +1,15 @@
+<?php 
+    if (isset($_GET["page"]))
+        $page = $_GET["page"];
+    else
+        $page = 1;
+    
+    include "db_connect.php";
+
+    $sql = "SELECT * FROM board ORDER BY bno DESC";
+    $result = mysqli_query($con,$sql);
+    $cnt = mysqli_num_rows($result);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,9 +18,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>사업실적</title>
+
     <?php include "header.php"; ?>
     <?php include "subheader.php"; ?>
-    <?php include "db_connect.php"; ?>
     <link rel="stylesheet" href="./css/menu01_05.css">
 </head>
 
@@ -24,7 +36,16 @@
         </div>
         <div class="list_wrap">
             <div class="search_gruop">
+                <div class="total">total: <?= $cnt ?></div>
+                <!-- <div class="search_btn">
+                    <input type="text" placehorder="검색어를 입력하세요">
+                    <div class="icon"><i class="fab fa-sistrix"></i></div>
+                </div> -->
+        <?php 
+            if($userid){ 
+        ?>
                 <button type="button" onclick="location.href='menu01_insert.php'"><i class="fas fa-plus"></i></button>
+        <?php } ?>
             </div>
             <table>
                 <colgroup>
@@ -45,14 +66,6 @@
                 </thead>
                 <tbody>
                 <?php 
-                    if (isset($_GET["page"]))
-                        $page = $_GET["page"];
-                    else
-                        $page = 1;
-
-                    $sql = "SELECT * FROM board ORDER BY bno DESC;";
-                    $result = mysqli_query($con,$sql);
-
 	                $total_record = mysqli_num_rows($result); // 전체 글 수
                     $scale = 15;	// 한 화면에 표시되는 글 수
 

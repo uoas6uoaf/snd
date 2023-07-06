@@ -25,7 +25,7 @@
                     <input type="file" name="upfile[]" id="upfile" multiple >
                 </div>
                 <div class="btn_group">
-                    <button type="button">취소</button>
+                    <button type="button" onclick="cancle_insert()">취소</button>
                     <button type="button" onclick="check_input()">등록</button>
                 </div>
             </form>
@@ -51,11 +51,17 @@
         }
         document.insert_board.submit();
     }
+    function cancle_insert() {
+        var result = confirm("글 작성을 정말로 취소하시겠습니까?");
+        if (result) {
+            history.back();
+        }
+    }
     $(document).ready(function () {
         $('#summernote').summernote({
             height: 600,                 // 에디터 높이
             lang: "ko-KR",					// 한글 설정
-            placeholder: '최대 2048자까지 쓸 수 있습니다'	//placeholder 설정
+            placeholder: '최대 2048자까지 쓸 수 있습니다',	//placeholder 설정
         });
     });
 </script>

@@ -1,7 +1,7 @@
 $(function (e) {
     var firstmenu = $('.nav-menu > li');
     var header = $('.header');
-    var sub = $(".nav-menu-sub li");
+    var headersub = $(".nav-menu-sub li");
     var main;
     var scrollNow =$(window).scrollTop();       //현재 스크롤 위치
     
@@ -48,11 +48,11 @@ $(function (e) {
         
         // header.stop().animate({ height: '250px' }, 100);
         header.css("height","320px");
-        sub.stop().fadeIn('slow');
+        headersub.stop().fadeIn('slow');
     })
 
     header.mouseleave(function () {
-        sub.stop().fadeOut('fast');
+        headersub.stop().fadeOut('fast');
         header.stop().animate({ height: '95px' }, 100);
         
         if(scrollNow == 0 && main == true) {
@@ -116,21 +116,9 @@ $(function (e) {
 
         $('#menu' + topMenu + ' .sub_' + subMenu).addClass("nowpage");
         // $("#manu02 .sub_01").addClass("nowpage");
-        $(window).scroll(
-            function () {
-                var div = $(".visual");
-                var sub = $(".submenu_bar");
-                var subtop = sub.offset().top;
-                var scroll = $(window).scrollTop();
-                var bottom = div.offset().top + div.outerHeight();
-                // if (window.pageYOffset >= bottom) {
-                //     $('.submenu_bar').addClass("fix_bar");
-                // } else {
-                //     $('.submenu_bar').removeClass("fix_bar");
-                // }
-            }
-        );
-        
+ 
+
+
         // 선택 메뉴 css 변경
         $(".submenu_bar > ul > li > a").hover(function () {
             $(this).addClass("on");
@@ -141,6 +129,25 @@ $(function (e) {
             $(this).addClass("nowpage");
         });
 
+
+        var sub = $(".active_bar");
+        var subtop = sub.offset().top;
+        console.log("subtop",subtop);
+        
+        $(window).scroll(function () {
+            scrollNow = $(document).scrollTop();
+            
+            if(!main && scrollNow >= subtop ){
+                console.log("여기요");
+                $(".active_bar").css({
+                    "position":"fixed",
+                    "top":"0",
+                    "z-index":"110"
+                })
+            }else {
+                $(".active_bar").css("position","static");
+            }
+        }); 
     }else{
     }
 })

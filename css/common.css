@@ -1,11 +1,55 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
-
+@font-face {
+    font-family: 'pretendard';
+    src: url('../font/public/static/alternative/Pretendard-Thin.ttf') format('truetype');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'pretendard';
+    src: url('../font/public/static/alternative/Pretendard-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'pretendard';
+    src: url('../font/public/static/alternative/Pretendard-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'pretendard';
+    src: url('../font/public/static/alternative/Pretendard-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'pretendard';
+    src: url('../font/public/static/alternative/Pretendard-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'pretendard';
+    src: url('../font/public/static/alternative/Pretendard-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'pretendard';
+    src: url('../font/public/static/alternative/Pretendard-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'pretendard';
+    src: url('../font/public/static/alternative/Pretendard-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'pretendard';
+    src: url('../font/public/static/alternative/Pretendard-Black.ttf') format('truetype');
+    font-weight: 900;
+}
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'pretendard';
 }
 body {
     margin: 0;
@@ -36,11 +80,20 @@ a {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+}
+.header .nav-item > img,
+.header .nav-item > .nav-menu {
+    position: absolute;
+}
+.header .nav-item > img {
+    left: 15%;
+    transform: translateX(-50%);
 }
 .header .nav-menu {
     width:40vw;
+    left: 52%;
+    transform: translateX(-52%);
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -78,7 +131,7 @@ a {
 
 /* footer css */
 .footer {
-    height: 60vh;
+    height: 27vh;
     margin-top: 12.5vh;
 }
 .footer a {
@@ -118,7 +171,7 @@ a {
 }
 
 .footer > .copyright {
-    height: 40%;
+    height: 100%;
     background-color: #404497;
     color: rgba(255, 255, 255, 0.6);
     font-size: 0.8rem;
@@ -257,7 +310,7 @@ a {
     border-radius: 30px;
     background-color: #ffffff;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     right: 10%;
     bottom: 7%;
 }
