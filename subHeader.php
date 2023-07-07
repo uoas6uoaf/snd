@@ -45,7 +45,7 @@
     <div class="submenu_bar" id="menu04">
         <ul>
             <li><a href="menu04_01.php" class="sub_01"><span>FAQ</span></a></li>
-            <li><a href="menu04_02.php" class="sub_02"><span>온라인문의</span></a></li>
+            <li><a href="menu04_02.php" class="sub_02"><span>고객지원</span></a></li>
         </ul>
     </div>
 </body>

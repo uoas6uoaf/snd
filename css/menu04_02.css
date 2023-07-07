@@ -1,0 +1,25 @@
+#menu04_02_wrap {
+    width: 100%;
+}
+
+#menu04_02_wrap > table {
+    margin: 0 auto;
+    width: 1400px;
+    height: 711px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#menu04_02_wrap > table th,
+#menu04_02_wrap > table td{
+    border: 1px solid #D9D9D9;
+    text-align: center;
+}
+#menu04_02_wrap > table th {
+    height: 50px;
+    border-top: 3px solid #404497;
+    background-color: #F5F7F9 ;
+    font-size: 18px;
+}
+#menu04_02_wrap > table td {
+    font-weight: 500;
+}

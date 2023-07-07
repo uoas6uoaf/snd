@@ -97,8 +97,8 @@ a {
     display: flex;
     justify-content: space-between;
     position: relative;
-    font-size: 1.6rem;
-    font-weight: 500;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 .header .nav-menu li{
     position: relative;
@@ -243,7 +243,7 @@ a {
 .visual > .visual_item > p {
     width: 50%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 17.5px;
 }
 .submenu_bar {

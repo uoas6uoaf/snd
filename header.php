@@ -59,7 +59,7 @@
                     <a href="menu04_01.php">고객센터</a>
                     <ul class="nav-menu-sub">
                         <li><a href="menu04_01.php">FAQ</a> </li>
-                        <li><a href="menu04_02.php">온라인문의</a></li>
+                        <li><a href="menu04_02.php">고객지원</a></li>
                     </ul>
                 </li>
             </ul>
