@@ -274,7 +274,7 @@ a {
 .submenu_bar > ul >li > .on,
 .submenu_bar > ul >li > .nowpage{
     color: #404497;
-    font-weight: 600;
+    font-weight: 800;
 }
 .submenu_bar > ul >li > .on::before,
 .submenu_bar > ul >li > .nowpage::before{
@@ -295,6 +295,8 @@ a {
     text-align: center;
     padding-top: 10vh;
     margin-bottom: 2vh;
+    font-weight: 600;
+    color: #222222;
 }
 .title_sub {
     text-align: center;

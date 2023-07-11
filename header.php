@@ -33,7 +33,7 @@
                         <li><a href="menu01_03.php">연혁</a> </li>
                         <li><a href="menu01_04.php">경영이념/비전</a> </li>
                         <li><a href="menu01_05.php">사업실적</a> </li>
-                        <li><a href="menu01_06.php">그룹사 소개</a> </li>
+                        <li><a href="menu01_07.php">그룹사 소개</a> </li>
                     </ul>
                 </li>
                 <li>

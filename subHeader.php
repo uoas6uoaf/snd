@@ -22,7 +22,7 @@
             <li><a href="menu01_03.php" class="sub_03"><span>연혁</span></a></li>
             <li><a href="menu01_04.php" class="sub_04"><span>경영이념/비전</span></a></li>
             <li><a href="menu01_05.php" class="sub_05"><span>사업실적</span></a></li>
-            <li><a href="menu01_06.php" class="sub_06"><span>그룹사소개</span></a></li>
+            <li><a href="menu01_07.php" class="sub_06"><span>그룹사소개</span></a></li>
         </ul>
     </div>
     <div class="submenu_bar" id="menu02">

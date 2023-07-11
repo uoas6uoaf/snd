@@ -92,12 +92,10 @@
     width:1020px;
     height: 500px;
     overflow: hidden;
-    
 }
 #menu02_04_wrap > .title_wrap img {
     transition: 1s;
 }
 #menu02_04_wrap > .title_wrap img:hover {
     transform: scale(1.2);
-    
 }

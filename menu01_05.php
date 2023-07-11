@@ -32,7 +32,7 @@
         </div>
         <div class="btn_group">
             <button type="button" class="active">게시글</button>
-            <button type="button">상장/인증</button>
+            <button type="button" onclick="location.href='menu01_06.php'">상장/인증</button>
         </div>
         <div class="list_wrap">
             <div class="search_gruop">
