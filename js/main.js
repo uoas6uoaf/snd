@@ -137,6 +137,16 @@ $(function(e){
 
     var slides = document.getElementsByClassName("slide_btn");
 
+    $(window).scroll(function () {
+        scrollNow = $(document).scrollTop();
+            if(scrollNow != 0){
+                $(".header").addClass("fix_top");
+            }else {
+                $(".header").removeClass("fix_top");
+            }
+    }); 
+
+
   
 })
 

@@ -1,4 +1,31 @@
+
+var header = $(".header");
+var gnb = $(".nav");
+var gnbList = $(".nav-menu");
+var gnb_dep1 = $(".nav-menu > li");
+var gnb_dep2 = $(".nav-menu > li .nav-menu-sub");
+var gnbBg = $('.gnb-overlay-bg');
+
+function gnb_on() {
+
+	$(".header").on("mouseenter", function() {
+		if(!header.is(".open")){
+			$(".header").addClass("open");
+		}
+	});
+
+	$(".header").on("mouseleave",gnb_return);
+
+	function gnb_return () {
+		$(".header").removeClass("open");
+		gnbBg.hide();
+		// if ( dep1 > 0 && dep2 ) {
+		// 	$gnbList.children("li").eq(dep1-1).addClass("active");
+		// }
+	}
+}
 $(function (e) {
+    gnb_on();
     var firstmenu = $('.nav-menu > li');
     var header = $('.header');
     var headersub = $(".nav-menu-sub li");
@@ -11,60 +38,10 @@ $(function (e) {
     }else {
         main=false;
     }
-    //스크롤 바뀔 때마다 위치 변경
-    $(window).scroll(function () {
-        scrollNow = $(document).scrollTop();
 
-        if(main ==  true && scrollNow == 0 ){
-            header.css("background-color", "transparent");
-            $(".nav-item img").attr('src', './img/logo2.png');
-            $(".nav-menu > li> a").css("color", "#ffffff");
-            $(".searchBtn").css("color","#ffffff");
-        }else{
-            header.css("background-color", "#ffffff");
-            $(".nav-item img").attr('src', './img/logo1.png');
-            $(".nav-menu > li> a").css("color", "#000000");
-            $(".searchBtn").css("color","#000000");
-            // return false;
-        }
-    }); 
-    
-    //메인화면 로딩 시 헤더 배경 제거
-    if(main==false){
-        header.css("background-color", "#ffffff");
-        $(".nav-item img").attr('src', './img/logo1.png');
-        $(".nav-menu > li> a").css("color", "#000000");
-        $(".searchBtn").css("color","#ffffff");
+    if(main== false){
+        $(".header").addClass("fix_top");
     }
-
-
-
-    firstmenu.mouseenter(function () {
-        header.css("background-color", "#ffffff");
-        $(".nav-item img").attr('src', './img/logo1.png');
-        $(".nav-menu > li> a").css("color", "#000000");
-        $(".nav-menu-sub > li > a").css("color", "#000000");
-        $(".searchBtn").css("color","#000000");
-        
-        // header.stop().animate({ height: '250px' }, 100);
-        header.css("height","320px");
-        headersub.stop().fadeIn('slow');
-    })
-
-    header.mouseleave(function () {
-        headersub.stop().fadeOut('fast');
-        header.stop().animate({ height: '95px' }, 100);
-        
-        if(scrollNow == 0 && main == true) {
-            header.css("background-color", "transparent");
-            $(".nav-item img").attr('src', './img/logo2.png');
-            $(".nav-menu > li> a").css("color", "#ffffff");
-            $(".searchBtn").css("color","#ffffff");
-
-        }else{
-            header.css("background-color", "#ffffff");
-        }
-    })
 
     //subheader
     if (document.querySelector('.page')) {
