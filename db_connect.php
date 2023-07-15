@@ -5,5 +5,6 @@
     $db_passwd = "dongbangsnd"; // 사용자 비밀번호
     $db_name = "dongbangsnd"; // 사용할 데이터베이스 이름
 
+    
     $con = mysqli_connect($db_host, $db_user, $db_passwd, $db_name);
 ?>
