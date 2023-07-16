@@ -4,7 +4,7 @@
     else
         $page = 1;
     
-    include "db_connect.php";
+    include_once("../db_connect.php");
 
     $sql = "SELECT * FROM board ORDER BY bno DESC";
     $result = mysqli_query($con,$sql);
@@ -12,19 +12,16 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>사업실적</title>
-
-    <?php include "header.php"; ?>
-    <?php include "subheader.php"; ?>
-    <link rel="stylesheet" href="./css/menu01_05.css">
+    <?php include_once("../inc/js.php") ?>
+    <link rel="stylesheet" href="../css/menu01_05.css">
 </head>
-
 <body>
+<?php include_once("../inc/header.php") ?>
+    <?php include_once("../inc/subheader.php") ?>
     <div id="menu01_05_wrap" class="page">
         <div class="title_wrap">
             <h1 class="title">회사소식</h1>
@@ -32,7 +29,7 @@
         </div>
         <div class="btn_group">
             <button type="button" class="active">게시글</button>
-            <button type="button" onclick="location.href='menu01_06.php'">상장/인증</button>
+            <button type="button" onclick="location.href='about06.php'">상장/인증</button>
         </div>
         <div class="list_wrap">
             <div class="search_gruop">
@@ -44,7 +41,7 @@
         <?php 
             if($userid){ 
         ?>
-                <button type="button" onclick="location.href='menu01_insert.php'"><i class="fas fa-plus"></i></button>
+                <button type="button" onclick="location.href='insert_form.php'"><i class="fas fa-plus"></i></button>
         <?php } ?>
             </div>
             <table>
@@ -93,7 +90,7 @@
                 ?>
                     <tr align=center>
                         <td><?= $bno ?></td>
-                        <td><a href="menu01_read.php?bno=<?= $bno ?>"><?= $title ?></a></td>
+                        <td><a href="read_form.php?bno=<?= $bno ?>"><?= $title ?></a></td>
                         <td><?= $writer ?></td>
                         <td><?= $reg_dt ?></td>
                         <td><?= $view_cnt ?></td>
@@ -110,7 +107,7 @@
                 <?php
                     if ($total_page >= 2 && $page >= 2) {
                         $new_page = $page - 1;
-                        echo "<li><a href='menu01-05.php?page=$new_page'><i class='fas fa-angle-left'></i></a></li>";
+                        echo "<li><a href='about05.php?page=$new_page'><i class='fas fa-angle-left'></i></a></li>";
                     }
 
                     // 게시판 목록 하단에 페이지 링크 번호 출력
@@ -118,26 +115,21 @@
                         if ($page == $i) {
                             echo "<li class='active'><b> $i</b></li>";
                         } else {
-                            echo "<li><a href='menu01_05.php?page=$i'> $i</a></li>";
+                            echo "<li><a href='about05.php?page=$i'> $i</a></li>";
                         }
                     }
 
                     if ($total_page >= 2 && $page != $total_page) {
                         $new_page = $page + 1;
-                        echo "<li><a href='menu01_05.php?page=$new_page'><i class='fas fa-angle-right'></i></a></li>";
+                        echo "<li><a href='about05.php?page=$new_page'><i class='fas fa-angle-right'></i></a></li>";
                     }
                 ?>
                 </ul>
             </div>
         </div>
     </div>
-    
+    <?php include_once("../inc/footer.php") ?>
 
-
-
-
-
-    <?php include 'footer.php'; ?>
 </body>
 
 </html>

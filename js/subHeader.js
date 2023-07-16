@@ -8,7 +8,6 @@ $(function () {
         scrollNow = $(document).scrollTop();
         
         if(scrollNow >= subtop ){
-            console.log("여기요");
             $(".active_bar").css({
                 "position":"fixed",
                 "top":"0",

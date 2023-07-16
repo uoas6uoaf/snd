@@ -6,14 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>그룹사소개</title>
-    <?php include "header.php"; ?>
-    <?php include "subheader.php"; ?>
-    <script src="./js/menu.js"></script>
-    <link rel="stylesheet" href="./css/menu01_07.css">
-
-
+    <?php include_once("../inc/js.php") ?>
+    <link rel="stylesheet" href="../css/menu01_07.css">
 </head>
 <body>
+<?php include_once("../inc/header.php") ?>
+    <?php include_once("../inc/subheader.php") ?>
     <div id="menu01_06_wrap" class="page">
         <div class="content">
             <div>
@@ -24,7 +22,7 @@
                 <ul class="all_group">
                     <li>
                         <ul>
-                            <li><img src="img/menu6-1.png"></li>
+                            <li><img src="../img/menu6-1.png"></li>
                             <li>
                                 <h2>㈜동방</h2>
                             </li>
@@ -38,7 +36,7 @@
                     </li>
                     <li>
                         <ul>
-                            <li><img src="img/menu6-1.png"></li>
+                            <li><img src="../img/menu6-1.png"></li>
                             <li>
                                 <h2>㈜유엔씨티</h2>
                             </li>
@@ -51,7 +49,7 @@
                     </li>
                     <li>
                         <ul>
-                            <li><img src="img/menu6-1.png"></li>
+                            <li><img src="../img/menu6-1.png"></li>
                             <li>
                                 <h2>㈜동방물류센터</h2>
                             </li>
@@ -65,7 +63,7 @@
                     </li>
                     <li>
                         <ul>
-                            <li><img src="img/menu6-1.png"></li>
+                            <li><img src="../img/menu6-1.png"></li>
                             <li>
                                 <h2>㈜동방광양물류센터</h2>
                             </li>
@@ -79,7 +77,7 @@
                     </li>
                     <li>
                         <ul>
-                            <li><img src="img/menu6-1.png"></li>
+                            <li><img src="../img/menu6-1.png"></li>
                             <li>
                                 <h2>일조국제훼리</h2>
                             </li>
@@ -92,7 +90,7 @@
                     </li>
                     <li>
                         <ul>
-                            <li><img src="img/menu6-1.png"></li>
+                            <li><img src="../img/menu6-1.png"></li>
                             <li>
                                 <h2>DONGBANG LOGISTICS VINA(베트남)</h2>
                             </li>
@@ -109,7 +107,7 @@
         </div>
 
     </div>
-    <?php include 'footer.php'; ?>
+    <?php include_once("../inc/footer.php") ?>
 
 </body>
 

@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <?php include "header.php"; ?>
-    <?php include "subheader.php"; ?>   
-    <link rel="stylesheet" href="./css/menu04_02.css">
-    <script src="./js/menu.js"></script>
+    <?php include_once("../inc/js.php") ?>  
+    <link rel="stylesheet" href="../css/menu04_02.css">
 </head>
 
 <body>
+<?php 
+    include_once("../inc/header.php");
+    include_once("../inc/subheader.php");
+     ?>
     <div id="menu04_02_wrap" class="page">
         <div class="title_wrap">
             <h1 class="title">고객지원</h1>
@@ -112,7 +113,7 @@
             </tbody>
         </table>
     </div>
-    <?php include 'footer.php'; ?>
+    <?php include_once("../inc/footer.php") ?>
 </body>
 
 </html>

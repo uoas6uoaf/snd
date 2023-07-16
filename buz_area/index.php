@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>사업분야</title>
-    <?php include "header.php"; ?>
-    <?php include "subheader.php"; ?>
-    <link rel="stylesheet" href="./css/menu02_01.css">
-    <script src="./js/menu2.js"></script>
+    <?php include_once("../inc/js.php") ?>
+    <link rel="stylesheet" href="../css/menu02_01.css">
+    <script src="../js/menu2.js"></script>
 </head>
 
 <body>
+<?php 
+    include_once("../inc/header.php");
+    include_once("../inc/subheader.php");
+?>
     <div id="menu02_01_wrap" class="page">
         <div>
             <h1 class="title">SI사업</h1>
@@ -20,11 +22,9 @@
                 구축, 운영하기 위하여 컨설팅에서부터 시스템 설계, 개발, 통합, 구축, 관리, 교육, 운영/유지보수 등의<br>
                 서비스를 제공하는 포괄적 사업을 진행하고 있습니다.</p>
         </div>
-   
-
         <div class="content1">
             <div class="item1">
-                <div class="img_wrap"><img class="wow scale_img" src="./img/menu2-11.png" ></div>
+                <div class="img_wrap"><img class="wow scale_img" src="../img/menu2-11.png" ></div>
                 <div class="bg"></div>
             </div>
             <div class="item2">
@@ -190,7 +190,7 @@
 
         </div>
     </div>
-    <?php include 'footer.php'; ?>
+    <?php include_once("../inc/footer.php") ?>
 
 </body>
 

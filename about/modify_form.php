@@ -1,7 +1,8 @@
 <?php
     $bno = $_GET['bno']; /* bno함수에 idx값을 받아와 넣음*/
 
-    include "db_connect.php";
+    include_once("../db_connect.php");
+
     $sql = "SELECT * FROM board WHERE bno ='$bno'";
     $result = mysqli_query($con,$sql);
 
@@ -18,18 +19,20 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>사업실적</title>
-    <?php include "header.php"; ?>
-    <?php include "subheader.php"; ?>
-    <?php include "db_connect.php"; ?>
-    <link rel="stylesheet" href="./css/menu01_insert.css">
+    <?php 
+        include_once("../inc/js.php") ;
+    ?>
+    <link rel="stylesheet" href="../css/menu01_insert.css">
 </head>
 <body>
+<?php 
+    include_once("../inc/header.php");
+    include_once("../inc/subheader.php");
+?>
     <div id="menu01_insert_wrap" class="page">
         <div class="title_wrap">
             <h1 class="title">게시글 수정</h1>
@@ -50,12 +53,12 @@
             </form>
         </div>
     </div>
+    <?php include_once("../inc/footer.php") ?>
 
-    
-
-
-    <?php include 'footer.php'; ?>
 </body>
+<script src="../js/plugin/summernote-lite.js"></script>
+<script src="../js/plugin/summernote-ko-KR.js"></script>
+<link rel="stylesheet" href="../css/summernote-lite.css">
 <script>
     function check_input() {
         if(!document.modify_board.title.value) {

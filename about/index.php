@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>소개</title>
-    <?php include "header.php"; ?>
-    <?php include "subheader.php"; ?>
-    <link rel="stylesheet" href="./css/menu01_01.css">
-    <script src="./js/menu.js"></script>
-    
-
+    <title>동방에스앤디</title>
+    <?php include_once("../inc/js.php") ?>
+    <link rel="stylesheet" href="../css/menu01_01.css">
+    <script src="../js/about_inx.js"></script>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=90bacd73d46cbfb9acfbf792963f1600"></script>
 </head>
 
 <body>
+    <?php include_once("../inc/header.php") ?>
+    <?php include_once("../inc/subheader.php") ?>
     <div id="menu01_01_wrap" class="page">
         <div class="intro">
             <h1 class="title">동방에스앤디 소개</h1>
@@ -219,7 +217,7 @@
                     <li>오시는 길</li>
                     <li>
                         <ul>
-                            <li><img src="./img/menu1-3.png"></li>
+                            <li><img src="../img/menu1-3.png"></li>
                             <li>
                                 <p>·<strong style='color:#00A448'> 2호선</strong><strong> 을지로 입구역 </strong>하차</p>
                                 <p>·<strong style='color:#00A448'> 2호선</strong><strong> 을지로 입구역 </strong>하차</p>
@@ -228,7 +226,7 @@
                     </li>
                     <li>
                         <ul>
-                            <li><img src="./img/menu1-3.png"></li>
+                            <li><img src="../img/menu1-3.png"></li>
                             <li>
                                 <p>롯데백화점 하차 > 도보 3분 간선버스 100,104,150,151,506 / 지선버스 7017</p>
                                 <p>롯데백화점 하차 > 도보 3분 간선버스 100,104,150,151,506 / 지선버스 7017</p>
@@ -240,7 +238,7 @@
             </div>
         </div>
     </div>
-    <?php include 'footer.php'; ?>
+    <?php include_once("../inc/footer.php") ?>
     
     <script>
         var mapContainer = document.getElementById('map'), // 지도를 표시할 div 

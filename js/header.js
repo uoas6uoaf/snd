@@ -66,27 +66,27 @@ $(function (e) {
                 chgTitle = "회사소개";
                 chgDesc = "동방은 글로벌 기업으로서의 미래 모습을 구현하기 위해 노력하고 있습니다."
                 $("#menu01").addClass("active_bar");
-                img.css("background-image", "url('./img/menu1-1.png')");
+                img.css("background-image", "url('../img/menu1-1.png')");
                 break;
             case '02':
                 chgTitle = "사업분야";
                 chgDesc = "제안사는 계열사의 물류, 섬유, 선박 사업의 성장동력인 시스템 개발·유지보수, 신규 시스템 개발·정보시스템 통합 사업을 활발히 진행하고 있으며, 고객사 특성에 맞는 최적화된 정보서비스 플랫폼 시스템 컨설팅 및 시스템 통합 구축에 특화된 SI전문 회사입니다.";
                 
                 $("#menu02").addClass("active_bar");
-                img.css("background-image", "url('./img/menu2.png')");
+                img.css("background-image", "url('../img/menu2.png')");
                 break;
             case '03':
                 chgTitle = "인재채용";
                 chgDesc = "전세계를 향해 도전할 수 있는Smart한 Global Specialist를 육성해 나가고 있습니다.";
                 $("#menu03").addClass("active_bar");
-                img.css("background-image", "url('./img/menu3.png')");
+                img.css("background-image", "url('../img/menu3.png')");
 
                 break;
             case '04':
                 chgTitle = "고객센터";
                 chgDesc = "전세계를 향해 도전할 수 있는Smart한 Global Specialist를 육성해 나가고 있습니다.";
                 $("#menu04").addClass("active_bar");
-                img.css("background-image", "url('./img/menu4.png')");
+                img.css("background-image", "url('../img/menu4.png')");
 
                 break;
         }
@@ -119,7 +119,6 @@ $(function (e) {
             scrollNow = $(document).scrollTop();
             
             if(!main && scrollNow >= subtop ){
-                console.log("여기요");
                 $(".active_bar").css({
                     "position":"fixed",
                     "top":"0",

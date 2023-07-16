@@ -21,7 +21,8 @@
     $writer     = $username;
 
 
-    include "db_connect.php";
+    include_once("../db_connect.php");
+
 
     $b_sql = "insert into board (title, content,reg_dt, writer) values ('$title','$content','$reg_dt','$writer')";
     $b_result = mysqli_query($con,$b_sql);
@@ -31,10 +32,10 @@
         
     }
 
-    echo "방금 입력한 값은: ".$last_bno;
+
     if(!empty($_FILES["upfile"]['name'][0])){
 
-        $uploadDir = "./data/";
+        $uploadDir = "../data/";
 
         for($i=0; $i<count($_FILES['upfile']['name']); $i++){
             $uploadFile = $uploadDir.basename($_FILES['upfile']['name'][$i]);
@@ -51,7 +52,7 @@
 
     }
     echo "<script>
-        location.href = 'menu01_05.php';
+        location.href = 'about05.php';
     </script>";
     
     // 파일

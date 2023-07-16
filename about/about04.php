@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>경영이념/비전</title>
-    <?php include "header.php"; ?>
-    <?php include "subheader.php"; ?>
-    <link rel="stylesheet" href="./css/menu01_04.css">
-    <script src="./js/menu1-4.js"></script>
+    <?php include_once("../inc/js.php") ?>
+    <link rel="stylesheet" href="../css/menu01_04.css">
+    <script src="../js/menu1-4.js"></script>
 </head>
 
 <body>
+    <?php include_once("../inc/header.php") ?>
+    <?php include_once("../inc/subheader.php") ?>
     <div id="menu01_04_wrap" class="page">
         <div class="title_wrap">
             <h1 class="title">경영이념</h1>
@@ -110,7 +110,8 @@
             </div>
         </div>
     </div>
-    <?php include 'footer.php'; ?>
+    <?php include_once("../inc/footer.php") ?>
+
 </body>
 
 </html>

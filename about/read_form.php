@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>사업실적</title>
-    <?php include "header.php"; ?>
-    <?php include "subheader.php"; ?>
-    <?php include "db_connect.php"; ?>
-    <link rel="stylesheet" href="./css/menu01_read.css">
+    <?php 
+        include_once("../inc/js.php") ;
+        include_once("../db_connect.php");
+    ?>
+    <link rel="stylesheet" href="../css/menu01_read.css">
 </head>
 <?php
 		$bno = $_GET['bno']; /* bno함수에 idx값을 받아와 넣음*/
@@ -30,6 +30,8 @@
 
 
 <body>
+    <?php include_once("../inc/header.php") ?>
+    <?php include_once("../inc/subheader.php") ?>
     <div id="menu01_read_wrap" class="page">
         <div class="title_wrap">
             <h1 class="title">회사소식</h1>
@@ -84,11 +86,11 @@
             if($userid){
             ?>
             <button type="button" onclick="confirm_del()">삭제</button>
-            <button type="button" onclick="location.href='menu01_modify.php?bno=<?= $bno ?>'">수정</button>
+            <button type="button" onclick="location.href='modify_form.php?bno=<?= $bno ?>'">수정</button>
             <?php
             }
             ?>
-            <button type="button" onclick="location.href='menu01_05.php'">목록</button>
+            <button type="button" onclick="location.href='about05.php'">목록</button>
         </div>
         <div class="move_list">
             <div class="arrow prev">
@@ -105,7 +107,7 @@
                         $bno = $row["bno"];
                         $title = $row["title"];
                 ?>
-                <div class="b_title"><a href="menu01_read.php?bno=<?= $bno ?>"><?= $title ?></a></div>
+                <div class="b_title"><a href="read_form.php?bno=<?= $bno ?>"><?= $title ?></a></div>
                 <?php
                     }else {
                 ?>
@@ -126,7 +128,7 @@
                         $bno = $row["bno"];
                         $title = $row["title"];
                     ?>
-                    <div class="b_title"><a href="menu01_read.php?bno=<?= $bno ?>"><?= $title ?></a></div>
+                    <div class="b_title"><a href="read_form.php?bno=<?= $bno ?>"><?= $title ?></a></div>
                     <?php
                     }else {
                     ?>
@@ -137,13 +139,8 @@
             </div>
         </div>
     </div>
+    <?php include_once("../inc/footer.php") ?>
     
-
-
-
-
-
-    <?php include 'footer.php'; ?>
     <script>
         function confirm_del() {
             var result = confirm("해당 게시글을 정말 삭제하시겠습니까?");

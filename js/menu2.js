@@ -29,12 +29,6 @@ $(function() {
 
             $("#menu02_01_wrap .square .line").css('animation','line3 1s 2.4s forwards');
             $("#menu02_01_wrap .square .square_wrap").css('animation','opc 1s 3s forwards');
-
-
-
-
-
-            
         }
     });
 });

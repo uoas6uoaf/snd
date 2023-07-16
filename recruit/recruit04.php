@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <?php include "header.php"; ?>
-    <?php include "subheader.php"; ?>
-    <script src="./js/menu3.js"></script>
-    <link rel="stylesheet" href="./css/menu03_04.css">
+    <?php include_once("../inc/js.php") ?>
+    <script src="../js/recruit.js"></script>
+    <link rel="stylesheet" href="../css/menu03_04.css">
 
 </head>
 
 <body>
+<?php 
+    include_once("../inc/header.php");
+    include_once("../inc/subheader.php");
+     ?>
     <div id="menu03_04_wrap" class="page">
         <div class="content">
             <div class="title_wrap">
@@ -123,12 +125,12 @@
         </div>
 
     </div>
+    <?php include_once("../inc/footer.php") ?>
+
 </body>
-<script src="js/summernote-lite.js"></script>
-<script src="js/summernote-ko-KR.js"></script>
-<link rel="stylesheet" href="css/summernote-lite.css">
-<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+<script src="../js/plugin/summernote-lite.js"></script>
+<script src="../js/plugin/summernote-ko-KR.js"></script>
+<link rel="stylesheet" href="../css/summernote-lite.css">
 <script>
     $(document).ready(function () {
         $('#summernote').summernote({

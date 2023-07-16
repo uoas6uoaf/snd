@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SM사업</title>
-    <?php include "header.php"; ?>
-    <?php include "subheader.php"; ?>
-    <link rel="stylesheet" href="./css/menu02_02.css">
-    <script src="./js/menu.js"></script>
+    <?php include_once("../inc/js.php") ?>
+    <link rel="stylesheet" href="../css/menu02_02.css">
 </head>
 
 <body>
+<?php 
+    include_once("../inc/header.php");
+    include_once("../inc/subheader.php");
+     ?>
     <div id="menu02_02_wrap" class="page">
         <h1 class="title">SM사업</h1>
         <p class="title_sub">그룹 전반의 전산업무를 담당하고, 물류, 항만 터미널, 유통, 고객사에 운영/유지보수 업무를 수행하며,<br>
@@ -21,7 +23,7 @@
             <ul>
                 <li>
                     <div>
-                        <img src="img/menu2-1.png">
+                        <img src="../img/menu2-1.png">
                         <div>
                             <h3>데이터 센터</h3>
                             <p>고객에게 안정된 DBMS 서비스 구축 및 운영관리</p>
@@ -30,7 +32,7 @@
                 </li>
                 <li>
                     <div>
-                        <img src="img/menu2-2.png">
+                        <img src="../img/menu2-2.png">
                         <div>
                             <h3>보안/네트워크</h3>
                             <p>웹 어플리케이션 취약점 점검 및 시스템/네트워크<br>취약점 진단</p>
@@ -39,7 +41,7 @@
                 </li>
                 <li>
                     <div>
-                        <img src="img/menu2-3.png">
+                        <img src="../img/menu2-3.png">
                         <div>
                             <h3>애플리케이션</h3>
                             <p>고객의 필요에 따라 신규 IT시스템 개발과 운영 지원</p>
@@ -48,7 +50,7 @@
                 </li>
                 <li>
                     <div>
-                        <img src="img/menu2-4.png">
+                        <img src="../img/menu2-4.png">
                         <div>
                             <h3>IT인프라</h3>
                             <p>고고객 전산 시스템 운영에 필요한 IT플랫폼 및 IT자원<br> 제공/운영</p>
@@ -57,7 +59,7 @@
                 </li>
                 <li>
                     <div>
-                        <img src="img/menu2-5.png">
+                        <img src="../img/menu2-5.png">
                         <div>
                             <h3>IT기획 및 컨설팅</h3>
                             <p>고객의 IT 추진계획에 대한 의사결정 및 전략수립 지원</p>
@@ -66,7 +68,7 @@
                 </li>
                 <li>
                     <div>
-                        <img src="img/menu2-6.png">
+                        <img src="../img/menu2-6.png">
                         <div>
                             <h3>헬프데스크</h3>
                             <p>고객 서비스 요구사항 접수 단일 창구화(365일 지원)</p>
@@ -155,7 +157,8 @@
 
         </div>
     </div>
-    <?php include 'footer.php'; ?>
+    <?php include_once("../inc/footer.php") ?>
+
 </body>
 
 </html>

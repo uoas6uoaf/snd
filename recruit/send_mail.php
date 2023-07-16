@@ -47,7 +47,7 @@ $mail->Send(); // 발송
 
 echo "<script>
     alert('담당자에게 메일이 전송되었습니다.');
-    location.href = 'menu03_04.php';
+    location.href = 'recruit04.php';
     </script>";
 }
 catch (phpmailerException $e) {

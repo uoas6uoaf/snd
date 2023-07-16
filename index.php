@@ -8,6 +8,7 @@
     <title>동방에스앤디</title>
     <?php include_once("db_connect.php") ?>
     <script src="https://kit.fontawesome.com/39d2c0da6a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
@@ -19,7 +20,6 @@
     <script src="js/main.js"></script>
 
 </head>
-
 <body>
     <?php include_once("inc/header.php") ?>
     <div class="wrap main">

@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>사업실적</title>
-    <?php include "header.php"; ?>
-    <?php include "subheader.php"; ?>
-    <?php include "db_connect.php"; ?>
-    <link rel="stylesheet" href="./css/menu01_insert.css">
+    <?php 
+        include_once("../inc/js.php") ;
+        include_once("../db_connect.php");
+    ?>
+    <link rel="stylesheet" href="../css/summernote-lite.css">
+    <link rel="stylesheet" href="../css/menu01_insert.css">
+    <script src="../js/plugin/summernote-lite.js"></script>
+    <script src="../js/plugin/summernote-ko-KR.js"></script>
 </head>
 <body>
+<?php 
+    include_once("../inc/header.php");
+    include_once("../inc/subheader.php");
+?>
     <div id="menu01_insert_wrap" class="page">
         <div class="title_wrap">
             <h1 class="title">게시글 등록</h1>
@@ -32,16 +39,9 @@
         </div>
     </div>
 
-    
+    <?php include_once("../inc/footer.php") ?>
 
-
-    <?php include 'footer.php'; ?>
 </body>
-<script src="js/summernote-lite.js"></script>
-<script src="js/summernote-ko-KR.js"></script>
-<link rel="stylesheet" href="css/summernote-lite.css">
-<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 <script>
     function check_input() {
         if(!document.insert_board.title.value) {

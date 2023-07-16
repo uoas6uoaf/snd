@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOS</title>
-    <?php include "header.php"; ?>
-    <?php include "subheader.php"; ?>
-    <link rel="stylesheet" href="./css/menu02_04.css">
-    <script src="./js/menu.js"></script>
+    <?php include_once("../inc/js.php") ?>
+    <link rel="stylesheet" href="../css/menu02_04.css">
 </head>
 
 <body>
+    <?php 
+    include_once("../inc/header.php");
+    include_once("../inc/subheader.php");
+     ?>
     <div id="menu02_04_wrap" class="page">
         <div class="title_wrap">
             <h1 class="title">TOS</h1>
             <p class="title_sub">TOS(Terminal Operating System)은 터미널 전반의 업무를 관리하고<br>편리한 서비스를 제공하여 효율적인 터미널 운영을 제공하는 솔루션
                 입니다</p>
-            <div class="img"><img src="img/menu2-9.png"></div>
+            <div class="img"><img src="../img/menu2-9.png"></div>
         </div>
         <div class="buz_content">
             <h3>터미널 전반의 업무를 관리하고, 편리한 서비스를 제공하여 효율적인 운영을 제공하는 솔루션</h3>
@@ -64,7 +65,7 @@
             </div>
         </div>
     </div>
-    <?php include 'footer.php'; ?>
+    <?php include_once("../inc/footer.php") ?>
 
 </body>
 
