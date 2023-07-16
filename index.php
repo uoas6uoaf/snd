@@ -6,13 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>동방에스앤디</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <?php include "db_connect.php"; ?>
-    <?php include 'header.php'; ?>
-    <script src="./js/main.js"></script>
+    <?php include_once("db_connect.php") ?>
+    <script src="https://kit.fontawesome.com/39d2c0da6a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+	<script src="js/plugin/jquery.js"></script>
+	<script src="js/plugin/slick.min.js"></script>
+	<script src="js/plugin/wow.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/main.js"></script>
+
 </head>
 
 <body>
+    <?php include_once("inc/header.php") ?>
     <div class="wrap main">
         <div id="main_visual">
             <div class="visual-inner">
@@ -237,7 +246,15 @@
         </div>
         <button class="sc_top" onClick="javascript:window.scrollTo(0,0)"><i class="fas fa-arrow-up-long"></i></button>
     </div>
-    <?php include 'footer.php'; ?>
+    <?php include_once("inc/footer.php") ?>
+    	
+    <!-- scripts -->
+
+	<script src="js/plugin/slick.min.js"></script>
+	<script src="js/plugin/wow.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
