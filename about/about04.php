@@ -58,7 +58,7 @@
                 </div>
                 <ul class="line_group">
                     <li><div class="line"></div></li>
-                    <li><h4>IT산업의 <span>Leader</span>,그것은 <span>우리의 미래</span>입니다.</h4></li>
+                    <li><h4>IT산업의 <strong>Leader</strong>, 그것은 <strong>우리의 미래</strong>입니다.</h4></li>
                 </ul>
             </div>
         </div>

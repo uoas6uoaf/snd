@@ -7,7 +7,7 @@
     <title>동방에스앤디</title>
     <?php include_once("../inc/js.php") ?>
     <link rel="stylesheet" href="../css/menu01_01.css">
-    <script src="../js/about_inx.js"></script>
+    <script src="../js/about.js"></script>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=90bacd73d46cbfb9acfbf792963f1600"></script>
 </head>
 
@@ -25,8 +25,8 @@
         </div>
         <div class="image_area">
             <div class="curtain_wrap">
-                <div class="left" style="width: 345px;"></div>
-                <div class="right" style="width: 345px;"></div>
+                <div class="left" style="width: 20%;"></div>
+                <div class="right" style="width: 20%;;"></div>
             </div>
             <div class="bg"></div>
         </div>
@@ -226,10 +226,10 @@
                     </li>
                     <li>
                         <ul>
-                            <li><img src="../img/menu1-3.png"></li>
+                            <li><img src="../img/menu1-4.png"></li>
                             <li>
-                                <p>롯데백화점 하차 > 도보 3분 간선버스 100,104,150,151,506 / 지선버스 7017</p>
-                                <p>롯데백화점 하차 > 도보 3분 간선버스 100,104,150,151,506 / 지선버스 7017</p>
+                                <p><strong>롯데백화점 하차</strong> > 도보 3분 간선버스 100,104,150,151,506 / 지선버스 7017</p>
+                                <p><strong>롯데백화점 하차</strong> > 도보 3분 간선버스 100,104,150,151,506 / 지선버스 7017</p>
                                </li>
                         </ul>
                     </li>

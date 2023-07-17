@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no">
     <title>동방에스앤디</title>
     <?php include_once("db_connect.php") ?>
     <script src="https://kit.fontawesome.com/39d2c0da6a.js" crossorigin="anonymous"></script>
@@ -13,46 +13,37 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/main.css">
-	<script src="js/plugin/jquery.js"></script>
-	<script src="js/plugin/slick.min.js"></script>
-	<script src="js/plugin/wow.min.js"></script>
+    <script src="js/plugin/jquery.js"></script>
+    <script src="js/plugin/slick.min.js"></script>
+    <script src="js/plugin/wow.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/main.js"></script>
 
 </head>
+
 <body>
     <?php include_once("inc/header.php") ?>
     <div class="wrap main">
         <div id="main_visual">
+        <div class="visual_title">
+            <h5 class="txt1">No.1 &nbsp solution &nbsp Partner</h5>
+            <h5 class="txt2">Leading &nbsp Innovation</h5>
+            <p>동방은 지속적인 성장과 차별화된 고객가치를 실현하고 있습니다.
+                <br>작지만 강한 기업, 고객의 생각이 중심인 기업, 통합 솔루션 기업
+            </p>
+        </div>  
             <div class="visual-inner">
                 <div class="visual-item active">
                     <img src="./img/main1.png">
-                    <div class="visual_title active">
-                        <h5>No.1 solution Partner Leading Innovation</h5>
-                        <p>동방은 지속적인 성장과 차별화된 고객가치를 실현하고 있습니다.
-                            작지만 강한 기업, 고객의 생각이 중심인 기업, 통합 솔루션 기업
-                        </p>
-                    </div>
                 </div>
                 <div class="visual-item">
                     <img src="./img/main2.png">
-                    <div class="visual_title">
-                        <h5>No.1 solution Partner<br>Leading Innovation</h5>
-                        <p>동방은 지속적인 성장과 차별화된 고객가치를 실현하고 있습니다.
-                            <br>작지만 강한 기업, 고객의 생각이 중심인 기업, 통합 솔루션 기업
-                        </p>
-                    </div>
                 </div>
                 <div class="visual-item">
-                    <img src="./img/main3.png">
-                    <div class="visual_title">
-                        <h5>No.1 solution Partner<br>Leading Innovation</h5>
-                        <p>동방은 지속적인 성장과 차별화된 고객가치를 실현하고 있습니다.
-                            <br>작지만 강한 기업, 고객의 생각이 중심인 기업, 통합 솔루션 기업
-                        </p>
-                    </div>
+                    <img src="./img/main11.png">
                 </div>
             </div>
+        </div>
         </div>
         <div id="buz">
             <div class="buz_cont">
@@ -173,8 +164,8 @@
           ?>
                         <li>
                             <img src="<?= $dir ?>" class="news_img"
-                                onclick="location.href='menu01_read.php?bno=<?= $bno ?>'">
-                            <h6 class="news_title" onclick="location.href='menu01_read.php?bno=<?= $bno ?>'">
+                                onclick="location.href='/about/read_form.php?bno=<?= $bno ?>'">
+                            <h6 class="news_title" onclick="location.href='/about/read_form.php?bno=<?= $bno ?>'">
                                 <?= $title ?></h6>
                             <p class="news_dt"><?= $reg_dt ?></p>
                         </li>
@@ -184,50 +175,22 @@
                     </ul>
                 </div>
                 <div class="btn_group">
-                    <button type="button" onclick="location.href='menu01_05.php'">주요 소식 바로가기<i
+                    <button type="button" onclick="location.href='/about/about05.php'">주요 소식 바로가기<i
                             class="fas fa-arrow-right-long"></i></button>
                 </div>
 
             </div>
-        </div>
-        <div id="com_intro">
-            <ul class="cont">
-                <li>
-                    <ul class="cont_inner">
-                        <li onclick="location.href='menu01_01.php'">
-                            <h3>동방소개</h3>
-                        </li>
-                        <li>
-                            <p>변화를 선도하는 글로벌 기업<br>동방시스템을 소개합니다.</p>
-                        </li>
-                    </ul>
-                    <div><i class="fas fa-arrow-right-long"></i></div>
-                </li>
-                <li>
-                    <ul class="cont_inner">
-                        <li onclick="location.href='menu01_03.php'">
-                            <h3>동방연혁</h3>
-                        </li>
-                        <li>
-                            <p>변화를 선도하는 글로벌 기업<br>동방시스템을 소개합니다.</p>
-                        </li>
-                    </ul>
-                    <div><i class="fas fa-arrow-right-long"></i></div>
-                </li>
-            </ul>
         </div>
         <div id="recruit">
             <ul>
                 <li>
                     <ul>
                         <li>
-                            <h1>동방과 함께할<br>당신을 초대합니다.</h1>
+                            <h1>변화를 선도하는 글로벌 기업<br>동방시스템을 소개합니다.</h1>
                         </li>
                         <li>
-                            <p>동방시스템과 함께할 당신을 초대합니다. <br>동방시스템과 함께할 당신을 초대합니다.</p>
+                            <button type="button" onclick="location.href='about04.php'">회사소개<i class="fas fa-arrow-right-long"></i></button>
                         </li>
-                        <li><button type="button" onclick="location.href='menu03_04.php'">채용문의<i
-                                    class="fas fa-arrow-right-long"></i></button></li>
                     </ul>
                 </li>
                 <li>
@@ -236,10 +199,8 @@
                             <h1>동방과 함께할<br>당신을 초대합니다.</h1>
                         </li>
                         <li>
-                            <p>동방시스템과 함께할 당신을 초대합니다. <br>동방시스템과 함께할 당신을 초대합니다.</p>
+                            <button type="button" onclick="location.href='/cs/.php'">고객센터<i class="fas fa-arrow-right-long"></i></button>
                         </li>
-                        <li><button type="button" onclick="location.href='menu04_01.php'">고객센터<i
-                                    class="fas fa-arrow-right-long"></i></button></li>
                     </ul>
                 </li>
             </ul>
@@ -247,11 +208,11 @@
         <button class="sc_top" onClick="javascript:window.scrollTo(0,0)"><i class="fas fa-arrow-up-long"></i></button>
     </div>
     <?php include_once("inc/footer.php") ?>
-    	
+
     <!-- scripts -->
 
-	<script src="js/plugin/slick.min.js"></script>
-	<script src="js/plugin/wow.min.js"></script>
+    <script src="js/plugin/slick.min.js"></script>
+    <script src="js/plugin/wow.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/main.js"></script>
 

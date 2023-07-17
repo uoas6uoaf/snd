@@ -18,7 +18,7 @@
         <div class="title_wrap">
             <h1 class="title">복리후생</h1>
             <p class="title_sub">
-                동방에스앤디는 성실하고 변화에 유연하며<br>스스로 성장하는 자질을 갖춘 인재를 기다립니다.
+                동방에스앤디는 성실하고 변화에 유연하며 스스로 성장하는 자질을 갖춘 인재를 기다립니다.
             </p>
         </div>
         <div class="content1">

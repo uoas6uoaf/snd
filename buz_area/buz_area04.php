@@ -19,8 +19,8 @@
             <h1 class="title">TOS</h1>
             <p class="title_sub">TOS(Terminal Operating System)은 터미널 전반의 업무를 관리하고<br>편리한 서비스를 제공하여 효율적인 터미널 운영을 제공하는 솔루션
                 입니다</p>
-            <div class="img"><img src="../img/menu2-9.png"></div>
         </div>
+        <div class="img"><img src="../img/menu2-9.png"></div>
         <div class="buz_content">
             <h3>터미널 전반의 업무를 관리하고, 편리한 서비스를 제공하여 효율적인 운영을 제공하는 솔루션</h3>
             <div class="txt_wrap">

@@ -1,6 +1,4 @@
 
-new WOW().init();
-
 $(function() {
     var div1 = $('#menu01_04_wrap');
 

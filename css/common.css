@@ -118,14 +118,15 @@ a {
 }
 .header .nav-menu-sub {
     position: absolute;
-    padding-top: 20px;
+    padding-top: 34px;
     font-size: 19px;
+    font-weight: 400;
     height: 0;
     overflow: hidden;
     transition: all 0.1s 0s;
 }
 .header .nav-menu-sub > ul > li {
-    height: 40px;
+    height: 50px;
 }
 .header .nav-menu-sub > ul a {
     font-size: 18px;
@@ -173,11 +174,11 @@ a {
 .open .nav-menu-sub {
     opacity: 1.0;
     visibility: visible;
-    height: 292px;
+    height: 340px;
     transition: height 0.4s ease-in-out, opacity 0.5s ease-in-out 0.2s;
 }
 .open #gnbBg {
-    height: 292px;
+    height: 340px;
 }
 .open .gnb-top-bg,
 .fix_top .gnb-top-bg {
@@ -196,8 +197,22 @@ a {
 .open .on-logo {
     display: none;
 }
-
-
+/* header responsive */
+@media all and (max-width: 1024px){
+    .header .nav-menu {
+        width: 480px;
+    }
+    .header .nav-menu-sub {
+        padding-top: 20px;
+    }
+    .header .nav-menu-sub > ul > li {
+        height: 40px;
+    }
+    .open #gnbBg ,
+    .open .nav-menu-sub{
+        height: 280px;
+    }
+}
 
 /* footer css */
 .footer {
@@ -296,6 +311,7 @@ a {
     background-image: url('../img/menu1-1.png');
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 .visual > .visual_item {
     width: 100%;
@@ -327,6 +343,7 @@ a {
     z-index: 1;
 }
 .submenu_bar > ul{ 
+    width: 1100px;
     height: 70px;
     margin: 0 auto;
     display: flex;
@@ -357,8 +374,17 @@ a {
     border-radius: 50%;
     content: "";
 }
+/* header responsive */
+@media all and (max-width: 1024px){
+    .submenu_bar > ul {
+        width: 990px;
+    }
+    .submenu_bar > ul > li {
+        margin: 0 34px;
+    }
+}
 
-
+ 
 /* 본문 공통 css */
 .title {
     font-size: 2.5rem;

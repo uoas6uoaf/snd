@@ -1,5 +1,5 @@
 #menu01_04_wrap > .content1 {
-    width: 1400px;
+    width: 80vw;
     margin: 0 auto;
 }
 #menu01_04_wrap > .content1 > .title2 {
@@ -19,7 +19,7 @@
 
 
 #menu01_04_wrap .circle_wrap {
-    width: 900px;
+    width: 930px;
     height: 500px;
     margin: 0 auto;
 }
@@ -60,9 +60,9 @@
 #menu01_04_wrap .circle_group li .top{
     border-top-left-radius: 160px;
     border-top-right-radius: 160px;
-    padding-top:30px;
-    padding-left:30px;
-    padding-right:30px;
+    padding-top:16px;
+    padding-left:16px;
+    padding-right:16px;
     position: absolute;
     top: 0;
 }
@@ -73,9 +73,9 @@
 #menu01_04_wrap .circle_group li .top{
     border-top-left-radius: 162px;
     border-top-right-radius: 162px;
-    padding-top:30px;
-    padding-left:30px;
-    padding-right:30px;
+    padding-top:16px;
+    padding-left:16px;
+    padding-right:16px;
     position: absolute;
     top: 0;
 }
@@ -83,9 +83,9 @@
     border-bottom-left-radius: 160px;
     border-bottom-right-radius: 160px;
 
-    padding-bottom:30px;
-    padding-left:30px;
-    padding-right:30px;
+    padding-bottom:16px;
+    padding-left:16px;
+    padding-right:16px;
 
     position: absolute;
     top: 50%;
@@ -121,10 +121,10 @@
     left: 0;
 }
 #menu01_04_wrap .circle_group .circle2 {
-    left: 290px;
+    left: 304px;
 }
 #menu01_04_wrap .circle_group .circle3 {
-    left: 580px;
+    left: 608px;
 }
 #menu01_04_wrap .circle_group .circle1 .bottom1,
 #menu01_04_wrap .circle_group .circle2 .top1,
@@ -195,9 +195,8 @@
     margin: 20px 0 35px 0;
     background-color: #c3c3c3;
 }
-#menu01_04_wrap .content1 .line_group span {
+#menu01_04_wrap .content1 .line_group strong {
     color: #404497;
-    font-weight: 500;
 }
 #menu01_04_wrap .content1 .line_group h4 {
     opacity: 0;
@@ -231,8 +230,8 @@
     padding-top: 81px;
 }
 #menu01_04_wrap > .content2 > .diag {
-    width: 70vw;
-    height: 82vh;
+    width: 1100px;
+    height: 63vh;
     margin: 32px auto;
     position: relative;
 }
@@ -272,7 +271,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
 }
 #menu01_04_wrap > .content2 .diag .line {
@@ -325,6 +324,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 21px;
     font-weight: 700;
 }
 #menu01_04_wrap > .content2 .diag_bottom > .square > div {
@@ -339,8 +339,15 @@
     color: rgba(64, 68, 151, 1);
     font-weight: 700;
 } 
-
+#menu01_04_wrap > .content2 .diag_bottom > .square p {
+    font-size: 15px;
+}
 
 .footer {
     margin-top: 0;
+}
+@media all and (max-width: 1200px){
+    #menu01_04_wrap > .content1 {
+        width: 1100px;
+    }
 }

@@ -142,6 +142,7 @@
     opacity: 0;
 }
 #menu02_01_wrap .cir1,
+#menu02_01_wrap .cir2 > .circle,
 #menu02_01_wrap .cir3 {
     opacity: 0;
 }

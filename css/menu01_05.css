@@ -94,3 +94,9 @@
     color: #ffffff;
     background-color: #333333;
 }
+@media all and (max-width: 1200px){
+    #menu01_05_wrap > .list_wrap {
+        width: 820px;
+        transition: all 1s;
+    }
+}

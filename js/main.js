@@ -122,22 +122,35 @@ function split_txt(txt) {
     var html = '';
 
     for (var i = 0; i < txt.length; i++) {
-        html += '<span>' + txt[i] + '</span>';
+        html += "<span class=''>" + txt[i] + "</span>";
     }
-    $('.active >.visual_title > h5').empty().append(html);
+    return html;
+    // $('.active >.visual_title > h5:first-child').empty().append(html);
+}
+function txt_effect(span,timer) {
+    span.each(function(index, item) {
+        $(item).css('animation', `opc 500ms ${(timer += 50)}ms forwards`);
+    });
 }
 $(function(e){
-    var txt = $(".active>.visual_title > h5").text();
+    //메인슬라이드 txt효과
+    var txt1 = $(".txt1").text();
+    var txt2 = $(".txt2").text();
 
-    console.log(txt);
-    split_txt(txt);
+    $('.txt1').empty().append(split_txt(txt1));
+    $('.txt2').empty().append(split_txt(txt2));
     
+    var span1 = $('.txt1 > span');
+    var span2 = $('.txt2 > span');
+
+    txt_effect(span1,100);
+    txt_effect(span2,1000);
     $(".visual-inner").slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
 		fade: true,
-		dots:true,
+		dots:false,
 		autoplay: true,
 		speed:2000,
 		infinite:true,

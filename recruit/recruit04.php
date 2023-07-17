@@ -8,9 +8,13 @@
     <?php include_once("../inc/js.php") ?>
     <script src="../js/recruit.js"></script>
     <link rel="stylesheet" href="../css/menu03_04.css">
+    <script src="../js/plugin/summernote.min.js"></script>
+    <script src="../js/plugin/summernote-ko-KR.js"></script>
 
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+<link rel="stylesheet" href="../css/summernote.min.css">
 </head>
-
 <body>
 <?php 
     include_once("../inc/header.php");
@@ -128,9 +132,6 @@
     <?php include_once("../inc/footer.php") ?>
 
 </body>
-<script src="../js/plugin/summernote-lite.js"></script>
-<script src="../js/plugin/summernote-ko-KR.js"></script>
-<link rel="stylesheet" href="../css/summernote-lite.css">
 <script>
     $(document).ready(function () {
         $('#summernote').summernote({
