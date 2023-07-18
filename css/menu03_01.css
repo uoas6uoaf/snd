@@ -3,7 +3,7 @@
     width:100%;
 }
 #menu03_01_wrap > .title_wrap > .img {
-    width:1400px;
+    width:75vw;
     margin: 0 auto;
     height: 400px;
     overflow: hidden;
@@ -53,4 +53,9 @@
     padding-top: 15px;
     font-size: 17px;
     color: #666666;
+}
+@media all and (max-width: 1300px) {
+    #menu03_01_wrap > .content1 li h3 {
+        font-size: 20px;
+    }
 }

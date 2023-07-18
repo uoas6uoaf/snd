@@ -20,6 +20,8 @@
 #menu01_02_wrap > .content > .com_name {
     margin: 5px 0;
 }
+#menu01_02_wrap > .content > .com_name,
 #menu01_02_wrap > .content > h4 {
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 600;
 }

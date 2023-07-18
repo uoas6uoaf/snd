@@ -39,9 +39,9 @@
 #menu02_04_wrap .txt_wrap > .inner {
     width: 70%;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-70%);
 }
 #menu02_04_wrap .txt_wrap > .inner > ul {
     display: flex;
@@ -72,7 +72,7 @@
 }
 #menu02_04_wrap .txt_wrap > .inner > ul > li > ul {
     height: 70%;
-    padding: 0 20px 0 40px;
+    padding: 10px 20px 0 60px;
     font-size: 17px;
 }
 #menu02_04_wrap .txt_wrap > .inner > ul > li > ul > li {

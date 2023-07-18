@@ -54,7 +54,7 @@ body {
     opacity: 0;
 }
 #main_visual .visual_title p {
-    /* margin-top: ; */
+    margin-top: 20px;
     opacity: 0;
     animation: opc 700ms 2100ms forwards;
 }

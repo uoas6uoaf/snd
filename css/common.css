@@ -232,8 +232,8 @@ a {
     color: #C3C3C3;
 }
 .footer > .com_info > img {
-    width: 200px;
-    height: 38px;
+    width: 168px;
+    height: 30px;
 }
 .footer > .com_info {
     width: 100%;
@@ -374,15 +374,20 @@ a {
     width: 50px;
     height: 50px;
     border: 1px #666666 solid;
-    border-radius: 30px;
-    background-color: #ffffff;
+    background-color: #404497;
+    color: #ffffff;
     position: fixed;
+    font-size: 13px;
     z-index: 100;
     right: 10%;
     bottom: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .sc_top > i {
-    color: #666666;
+    color: #ffffff;
 }
 
 
@@ -404,4 +409,94 @@ a {
     100% {
         opacity: 1;
     }
+}
+#login_vw {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+}
+#login_vw > .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+#login_vw > .bg > img {
+    width: 100%;
+    height: 100%;
+}
+#login_vw > form {
+    width: 30vw;
+    height: 45vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#login_vw .login_form {
+    width: 100%;
+}
+.login_form > .login_title {
+    font-size: 30px;
+    margin-bottom: 10%;
+    text-align: center;
+}
+.login_form > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login_form > ul > li {
+    width: 90%;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login_form > ul > li:nth-child(1),
+.login_form > ul > li:nth-child(2) {
+    border-bottom: 1px solid #d9d9d9;
+}
+.login_form > ul > li:nth-child(3) {
+    width: 33%;
+    margin-top: 30px;
+}
+.login_form > ul > li > button {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #404497;
+    font-size: 21px;
+    font-weight: 600;
+}
+.login_form > ul .col1 {
+    padding-bottom: 32px;
+    font-size: 24px;
+    width: 24%;
+    color: #666666;
+}
+.login_form > ul .col2 {
+    width: 70%;
+}
+.login_form > ul span {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.login_form input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+}
+input:focus {
+    outline: none;
 }

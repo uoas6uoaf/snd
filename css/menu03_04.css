@@ -40,6 +40,7 @@
 }
 #menu03_04_wrap > .content .data1 > .col1 > input {
     width: 200px;
+    padding-left: 12px;
 }
 #menu03_04_wrap > .content .data1 > .col2 > input ,
 #menu03_04_wrap > .content .data1 > .col3 > input {

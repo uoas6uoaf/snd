@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../css/menu01_insert.css">
     <script src="../js/plugin/summernote-lite.js"></script>
     <script src="../js/plugin/summernote-ko-KR.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 </head>
 <body>
 <?php 
@@ -29,7 +31,7 @@
                 <textarea name="content" id="summernote"></textarea>
                 <div class="file_wrap">
                     <label for="upfile">첨부파일</label>
-                    <input type="file" name="upfile[]" id="upfile" multiple >
+                    <input type="file" name="upfile[]" id="upfile" multiple styele="font-size:16px">
                 </div>
                 <div class="btn_group">
                     <button type="button" onclick="cancle_insert()">취소</button>

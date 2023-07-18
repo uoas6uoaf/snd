@@ -1,7 +1,7 @@
 
 <footer class="footer">
     <div class="com_info">
-        <img src="./img/logo2.png">
+        <img src="/img/logo2.png">
         <ul>
             <li>회사명 &#58; 동방에스앤디</li>
             <li>주소 &#58; 서울 중구 소공로 88, 701호</li>

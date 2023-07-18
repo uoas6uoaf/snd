@@ -72,4 +72,4 @@
         </div>
     </nav>
 </header>
-<button class="sc_top" onClick="javascript:window.scrollTo(0,0)"><i class="fas fa-arrow-up-long"></i></button>
+<button class="sc_top" onClick="javascript:window.scrollTo(0,0)"><i class="fas fa-arrow-up-long"></i>TOP</button>

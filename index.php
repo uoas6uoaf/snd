@@ -186,10 +186,10 @@
                 <li>
                     <ul>
                         <li>
-                            <h1>변화를 선도하는 글로벌 기업<br>동방시스템을 소개합니다.</h1>
+                            <h1>변화를 선도하는 글로벌 기업<br>동방에스앤디를 소개합니다.</h1>
                         </li>
                         <li>
-                            <button type="button" onclick="location.href='about04.php'">회사소개<i class="fas fa-arrow-right-long"></i></button>
+                            <button type="button" onclick="location.href='/about/about04.php'">회사소개<i class="fas fa-arrow-right-long"></i></button>
                         </li>
                     </ul>
                 </li>
@@ -199,13 +199,12 @@
                             <h1>동방과 함께할<br>당신을 초대합니다.</h1>
                         </li>
                         <li>
-                            <button type="button" onclick="location.href='/cs/.php'">고객센터<i class="fas fa-arrow-right-long"></i></button>
+                            <button type="button" onclick="location.href='/cs/cs/.php'">고객센터<i class="fas fa-arrow-right-long"></i></button>
                         </li>
                     </ul>
                 </li>
             </ul>
         </div>
-        <button class="sc_top" onClick="javascript:window.scrollTo(0,0)"><i class="fas fa-arrow-up-long"></i></button>
     </div>
     <?php include_once("inc/footer.php") ?>
 
